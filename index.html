@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>
+			Riot Acts - Extralegal Violence Between 1783 and 1865
+		</title>
+		<!-- Leaflet -->
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css"/>
+		<link rel ="stylesheet" href="lib/leaflet/nouislider.css"/>
+		<link rel ="stylesheet" href="lib/leaflet/MarkerCluster.css"/>
+		<link rel ="stylesheet" href="lib/leaflet/MarkerCluster.Default.css"/>
+		<script src="lib/leaflet/leaflet.js" ></script>
+		<script src="lib/leaflet/leaflet.markercluster.js" ></script>
+		<script src="data/borders.json"></script>
+		<script src="data/Acts.json"></script>
+		<script src="lib/leaflet/nouislider.js" ></script>
+		<style type="text/css">
+
+
+		.center {
+			display: block;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 35%;
+			}
+
+			.end {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 65%;
+					}
+
+			.container {
+					height: 100%;
+					width: 100%;
+					}
+
+					.mid {
+						display: block;
+						margin: 0;
+						width: 100%;
+						opacity: 85%;
+						}
+
+			.leftad {
+				display: inline-block;
+				margin-left: 0px;
+				width: 30%;
+				padding-right: 3.33%;
+					}
+
+			.centerad {
+				display: inline-block;
+				width: 30%;
+				padding-right: 1.665%;
+				padding-left: 1.665%;
+			}
+
+			.rightad {
+				display: inline-block;
+				margin-right: 0px;
+				width: 30%;
+				padding-left: 3.33%;
+			}
+
+			.bleftad {
+				display: inline-block;
+				margin-top: 10px;
+				margin-left: 0px;
+				width: 30%;
+				padding-right: 3.33%;
+					}
+
+			.bcenterad {
+				display: inline-block;
+				width: 30%;
+				margin-top: 10px;
+				padding-right: 1.665%;
+				padding-left: 1.665%;
+			}
+
+			.brightad {
+				display: inline-block;
+				margin-top: 10px;
+				margin-right: 0px;
+				width: 30%;
+				padding-left: 3.33%;
+			}
+
+
+			h1 {
+						font-family: Georgia;
+						color: #8b0000;
+						margin: 20px;
+						font-size:40px;
+						font-weight: normal;
+					}
+
+			h2 {
+						font-family: Verdana;
+						color: #8b0000;
+						margin: 20px;
+						font-size: 30px;
+						font-weight: normal;
+							}
+
+			p {
+				font-family: Verdana;
+				color: #2b2b2b;
+				margin: 20px;
+				font-size: 18px;
+			}
+
+			.topnav {
+				background-color: #f2f2f2;
+				overflow: hidden;
+				border-radius: 0px;
+				margin-bottom: 15px;
+				text-align: center;
+				justify-content: center;
+			}
+
+			.leftnav a {
+				color: #bfbdbd;
+				text-align: center;
+				display: inline-block;
+				justify-content: center;
+				padding: 15px 25px;
+				margin: 0;
+				text-decoration: none;
+				font-size: 18px;
+				font-family: Verdana;
+			}
+
+			.leftnav a:hover {
+				color: #E2E2E2;
+			}
+
+			.active {
+				color: #8b0000;
+
+			}
+
+			body,html {
+				margin:0;
+				padding:0;
+			}
+			body{
+							background-color:white;
+					}
+
+
+
+		</style>
+	</head>
+	<body style="background-color: #f2f2f2">
+		<div id="wrapper">
+		<a href="index.html">
+    <image src="images/musketacts.png" class = center></div>​​​​​​​​​​
+		</a>
+			<nav class = "topnav"/>
+				<div class="leftnav">
+					<a class = "active" href="index.html">Home</a>
+					<a href="tmap.html">Time Map</a>
+					<a href="qmap.html">Queryable Map</a>
+					<a href="Source/source.html">Network Analysis</a>
+					<a href="aigen.html">aiRiot</a>
+					<a href="pe/pe.html">People and Events</a>
+					<a href="stories/stories.html">Stories</a>
+					<a href="about/about.html">About</a>
+				</div>
+			</nav>
+
+
+			<image src="images/RiotActsNewBanner2.png" class = container></div>
+			<image src="images/textbannernew2.png" class = container></div>
+
+			<div>
+			<a href="tmap.html">
+			<image src="images/timemap2.png" class = leftad align = "left">
+			</a>
+			<a href="qmap.html">
+			<image src="images/QMap2.png" class = centerad align = "middle">
+			</a>
+			<a href="Source/source.html">
+			<image src="images/network2.png" class = rightad align = "right">
+			</a>
+			</div>
+
+			<br>
+
+			<div>
+			<a href="pe/pe.html">
+			<image src="images/pe2.png" class = bleftad align = "left">
+			</a>
+			<a href="stories/stories.html">
+			<image src="images/storiesnew2.png" class = bcenterad align = "middle">
+			</a>
+			<a href="about/about.html">
+			<image src="images/about2.png" class = brightad align = "right">
+			</a>
+			</div>
+
+			<br>
+
+			<a href="aigen.html">
+			<image src="images/airiot3.png" class = container></div>
+			</a>
+
+
+  </body>

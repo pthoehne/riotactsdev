@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>
+      Riot Acts: aiRiot
+		</title>
+		<style type="text/css">
+
+		.center {
+			display: block;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 35%;
+			}
+
+		.textright {
+			float: right;
+			width: 300px;
+			opacity: 65%;
+			}
+
+		.mid {
+			display: block;
+			margin: 0;
+			width: 100%;
+			opacity: 85%;
+			}
+
+			.mid2 {
+				display: block;
+				margin-left: 0;
+				margin-right: 0;
+				width: 100%;
+				opacity: 30%;
+				}
+
+	.end {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 35%;
+			}
+
+			h1 {
+						font-family: Georgia;
+						color: #8b0000;
+						margin: 20px;
+						font-size:40px;
+						font-weight: normal;
+					}
+
+			h2 {
+						font-family: Verdana;
+						color: #8b0000;
+						margin: 20px;
+						font-size: 30px;
+						font-weight: normal;
+							}
+
+			p {
+				font-family: Verdana;
+				color: #2b2b2b;
+				margin: 20px;
+				font-size: 18px;
+			}
+
+	.topnav {
+		background-color: #f2f2f2;
+		overflow: hidden;
+		border-radius: 0px;
+		margin-bottom: 15px;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.leftnav a {
+		color: #bfbdbd;
+		text-align: center;
+		display: inline-block;
+		justify-content: center;
+		padding: 15px 25px;
+		margin: 0;
+		text-decoration: none;
+		font-size: 18px;
+		font-family: Verdana;
+	}
+
+	.leftnav a:hover {
+		color: #E2E2E2;
+	}
+
+	.active {
+		color: #8b0000;
+
+	}
+
+
+	.brightad {
+		display: inline-block;
+		margin-top: 10px;
+		margin-right: 0px;
+		width: 30%;
+		padding-left: 3.33%;
+	}
+
+		body,html {
+			margin:0;
+			padding:0;
+		}
+		body{
+						background-color:white;
+				}
+
+      button{
+        height:20px;
+        width:90px;
+        margin: -20px -50px;
+        position:relative;
+        top:50%;
+        left:50%;
+        border-radius: 50%;
+        font-family: Verdana;
+
+    }
+
+		</style>
+	</head>
+	<body style="background-color: #f2f2f2">
+		<div id="wrapper">
+		<a href="index.html">
+    <image src="images/musketacts.png" class = center></div>​​​​​​​​​​
+		</a>
+			<nav class = "topnav"/>
+				<div class="leftnav">
+					<a href="index.html">Home</a>
+					<a href="tmap.html">Time Map</a>
+					<a href="qmap.html">Queryable Map</a>
+					<a href="Source/source.html">Network Analysis</a>
+          <a class = "active" href="aigen.html">aiRiot</a>
+					<a href="pe/pe.html">People and Events</a>
+					<a href="stories/stories.html">Stories</a>
+					<a href="about/about.html">About</a>
+				</div>
+			</nav>
+		<image src="images/shear.png" class = mid2></div>
+    <h1>Generating Riots With Artificial Intelligence</h1>
+		<p>How can artificial intelligence and machine learning help historians interrogate the past? Inspired by the creative use of AI in procedural story generation,
+		this section of <i>Riot Acts</i> experiments with applying the technology to descriptions of American rioting. Using OpenAI's Generative Pre-Trained Transformer 2 (GPT-2) and Max Woolf's gpt-2-simple,
+		<i>Riot Acts</i> trained a model using a corpus consisting of the descriptions of extralegal violence. All of these descriptions come from the same database used to create the
+		rest of <i>Riot Acts</i>.
+		<br>
+		<br>
+		Using GPT-2, <i>Riot Acts</i> has so far produced over 100 pages of simulated, AI-generated descriptions of extralegal violence. This page randomly diplays one riot from that selection with every button press. These generated actions are entirely fictional, but were
+		constructed using real historical data. This itself leads to interesting questions. What patterns does the AI see, and attempt to mimic? How do the symbols and language of American extralegal violence translate
+		in a simulated, fictional exampled? What are the potential dangers of producing AI-generated fake history?
+		<br>
+		<br>
+		Click the button below to "roll" an AI-generated riot.</p>
+    <button onclick="newRiot()">Roll a Riot</button>
+    <div id="aiGen" style = "margin-left: 200px; margin-right: 200px; margin-top: 20px; margin-bottom: 20px; text-align: center; font-family: Verdana; font-size: 20px; color: #2b2b2b">
+      <!-- Riot Will Display Here -->
+    </div>
+
+    <script src="aigen.js"></script>
+
+		<image src="images/nebmap3.png" class = mid></div>
+
+  </body>
+</html>

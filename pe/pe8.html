@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>
+			Riot Acts: People and Events
+		</title>
+		<!-- Leaflet -->
+		<link rel="stylesheet" href="../lib/leaflet/leaflet.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/nouislider.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/MarkerCluster.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/MarkerCluster.Default.css"/>
+		<script src="../lib/leaflet/leaflet.js" ></script>
+		<script src="../lib/leaflet/leaflet.markercluster.js" ></script>
+		<script src="../data/borders.json"></script>
+		<script src="../data/Acts.json"></script>
+		<script src="../lib/leaflet/nouislider.js" ></script>
+		<style type="text/css">
+
+
+		.center {
+			display: block;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 35%;
+			}
+
+		.textright {
+			float: right;
+			width: 300px;
+			opacity: 65%;
+			}
+
+		.mid {
+			display: block;
+			margin: 0;
+			width: 100%;
+			opacity: 85%;
+			}
+
+			.mid2 {
+				display: block;
+				margin-left: 0;
+				margin-right: 0;
+				width: 100%;
+				opacity: 55%;
+				}
+
+	.end {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 35%;
+			}
+
+			h1 {
+						font-family: Georgia;
+						color: #8b0000;
+						margin: 20px;
+						font-size:40px;
+						font-weight: normal;
+					}
+
+			h2 {
+						font-family: Verdana;
+						color: #8b0000;
+						margin: 20px;
+						font-size: 30px;
+						font-weight: normal;
+							}
+
+			p {
+				font-family: Verdana;
+				color: #2b2b2b;
+				margin: 20px;
+				font-size: 18px;
+			}
+
+	.topnav {
+		background-color: #f2f2f2;
+		overflow: hidden;
+		border-radius: 0px;
+		margin-bottom: 15px;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.leftnav a {
+		color: #bfbdbd;
+		text-align: center;
+		display: inline-block;
+		justify-content: center;
+		padding: 15px 25px;
+		margin: 0;
+		text-decoration: none;
+		font-size: 18px;
+		font-family: Verdana;
+	}
+
+	.leftnav a:hover {
+		color: #E2E2E2;
+	}
+
+	.active {
+		color: #8b0000;
+
+	}
+
+
+	.brightad {
+		display: inline-block;
+		margin-top: 10px;
+		margin-right: 0px;
+		width: 30%;
+		padding-left: 3.33%;
+	}
+	.pnnavbar {
+		overflow: hidden;
+		width: 193.2px;
+		display: block;
+		color: #7c7c7c;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		justify-content: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.pnnav a {
+		float: left;
+		display: block;
+		text-align: center;
+		color: #7c7c7c;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 50%;
+		margin: 0;
+		text-decoration: none;
+		font-size: 19.45px;
+		font-family: Verdana;
+	}
+
+	.pnnav a:hover {
+		color: #E2E2E2;
+	}
+
+	.pnnav a.active {
+		color: #E2E2E2;
+	}
+
+		body,html {
+			margin:0;
+			padding:0;
+		}
+		body{
+						background-color:white;
+				}
+
+			table {
+					color: #7c7c7c;
+					margin-left: 20px;
+					font-family: Georgia;
+					color: #2b2b2b;
+					}
+
+
+		</style>
+	</head>
+	<body style="background-color: #f2f2f2">
+		<div id="wrapper">
+		<a href="../index.html">
+		<image src="../images/musketacts.png" class = center></div>​​​​​​​​​​
+		</a>
+			<nav class = "topnav"/>
+				<div class="leftnav">
+					<a href="../index.html">Home</a>
+					<a href="../tmap.html">Time Map</a>
+					<a href="../qmap.html">Queryable Map</a>
+					<a href="../Source/source.html">Network Analysis</a>
+					<a href="../aigen.html">aiRiot</a>
+					<a class = "active" href="pe.html">People and Events</a>
+					<a href="../stories/stories.html">Stories</a>
+					<a href="../about/about.html">About</a>
+				</div>
+			</nav>
+			<image src="../images/jump.png" class = mid2></div>
+
+      <h1>People and Events</h1>
+      <p>
+        People and Events.
+      </p>
+
+    	<!--<nav class = "stnavbar"/>
+        <div class="stnav">
+          <a class="active" href=pe.html>Events</a>
+          <a href="people.html">People</a>
+        </div>
+
+
+      </nav>-->
+			<br>
+			<br>
+			<table border=0 cellpadding=0 cellspacing=0 width=1152 style='border-collapse:
+			 collapse;table-layout:fixed;width:862pt'>
+			 <col width=41 style='mso-width-source:userset;mso-width-alt:1322;width:31pt'>
+			 <col width=87 style='width:65pt'>
+			 <col class=xl71 width=24 style='mso-width-source:userset;mso-width-alt:768;
+			 width:18pt'>
+			 <col width=87 style='width:65pt'>
+			 <col class=xl71 width=24 style='mso-width-source:userset;mso-width-alt:768;
+			 width:18pt'>
+			 <col width=172 style='mso-width-source:userset;mso-width-alt:5504;width:129pt'>
+			 <col class=xl71 width=24 style='mso-width-source:userset;mso-width-alt:768;
+			 width:18pt'>
+			 <col width=88 style='mso-width-source:userset;mso-width-alt:2816;width:66pt'>
+			 <col class=xl71 width=24 style='mso-width-source:userset;mso-width-alt:768;
+			 width:18pt'>
+			 <col width=75 style='mso-width-source:userset;mso-width-alt:2389;width:56pt'>
+			 <col width=87 style='width:65pt'>
+			 <col width=71 style='mso-width-source:userset;mso-width-alt:2261;width:53pt'>
+			 <col width=87 span=4 style='width:65pt'>
+			 <tr class=xl67 height=56 style='height:42.0pt'>
+			  <td height=56 class=xl65 width=41 style='height:42.0pt;width:31pt'>Year</td>
+			  <td class=xl65 width=87 style='width:65pt'>State</td>
+			  <td class=xl65 width=24 style='width:18pt'></td>
+			  <td class=xl65 width=87 style='width:65pt'>Location</td>
+			  <td class=xl65 width=24 style='width:18pt'></td>
+			  <td class=xl65 width=172 style='width:129pt'>Description</td>
+			  <td class=xl65 width=24 style='width:18pt'></td>
+			  <td class=xl65 width=88 style='width:66pt'>Source</td>
+			  <td class=xl65 width=24 style='width:18pt'></td>
+			  <td class=xl65 width=75 style='width:56pt'>Persons Named as Rioters</td>
+			  <td class=xl65 width=87 style='width:65pt'>Persons Named as Targets</td>
+			  <td class=xl65 width=71 style='width:53pt'>Note</td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Texas</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>San Antonio, Texas</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Mob hanged Ben Franks, a
+			  local cattleman, outside jail after officers had arrested him. Frank was
+			  charged with murder and robbery.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Sonnechison.10 Texas Feuds, p.81</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Ben Franks</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=385 style='height:289.0pt'>
+			  <td height=385 class=xl68 width=41 style='height:289.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Draft riots. Start in
+			  protest of $300 exemption clause of draft. Includes attacks on homes and
+			  shops of the rich, but quickly black people become the main focus of rioters'
+			  wrath. African Americans lynched from light posts, homes and institutions destroyed.
+			  Concerted fight with authorities. Army ordered in and massive street battles
+			  ensue. At least 105 died.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Cook, Headley, Bernstein.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>South English, Keokuk Co., Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>August: Battle between local
+			  copperheads and soldiers, led to several deaths. Governor ordered in 11
+			  companies of home guards to restore order.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Gray.Hidden Civil War, p.164-165;
+			  Coaklen.Role, p.261-262</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Dawville, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>August: Mob of about 400
+			  besieged office of local provost Marshall over the draft. Five people killed
+			  before military put down the riot.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Coakley.Role, p.262-263</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Pennsylvania</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Philadelphia</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>August: Conflict between
+			  coscripts and neighboring farmers over trespassing. One farmer shot and
+			  killed.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Scharf and Wescott, p.809</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=181 style='height:136.0pt'>
+			  <td height=181 class=xl68 width=41 style='height:136.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Pennsylvania</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Audenreid, PA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>November: Mob of miners broke
+			  into the home of George K. Smith and killed him. Smith, a mine operator, had
+			  apparently given a list of employees to a draft officer.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Aurand, p.98</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>George K. Smith</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=181 style='height:136.0pt'>
+			  <td height=181 class=xl68 width=41 style='height:136.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Montana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Montana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>November: Vigilantes active
+			  throughout the area to punish robbers and murderers who had hitherto been
+			  proected by the corrupt officers of the law. Thirty men hanged.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>H+W, p.462-465</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=136 style='height:102.0pt'>
+			  <td height=136 class=xl68 width=41 style='height:102.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Los Angeles</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>November: Crowd of 200 arrested
+			  5 Anglo drifters who allegedly murdered a prospector and resisted arrest. All
+			  five lynched.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Blew. &quot;Vigilantism,&quot;
+			  p.23</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Los Angeles</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>December: Convicted murderer of
+			  an Anglo rancher, Manuel Cerredel, seized aboard steamer taking him to San
+			  Quinton and hanged from a yard arm.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Blew. &quot;Vigilantism,&quot;
+			  p.24</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Manuel Cerredel</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Los Angeles</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>December: Charles Wilkens,
+			  convicted of murdering John Sanford, merchant, was dragged from the court
+			  room and hanged in a nearby corral.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Blew. &quot;Vigilantism,&quot;
+			  p.24</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Charles Wilkens</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Campo Chino, CA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>December: On the 26th, Luis
+			  Seyra and Cosmé Nuñez seized from authorities and killed for alleged murder.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>House Ex. Doc #73^24 as listed in
+			  Carrigan and Webb, Forgotten Dead.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Luis Seyra; Cosmé Nuñez</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Texas</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Galveston, Texas</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Soldiers riot over meager
+			  provisions. They turned their guns on the town and forced commandant to give
+			  them what they wanted.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Tatum.Disloyalty, p.52</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Texas</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Galveston, TX</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Soldiers took their meager
+			  rations and burned them in the street.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Tatum.Disloyalty, p.52</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Alabama</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Alabama</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Women may have been involved in
+			  breach riots in NC, Alabama, Texas and Virginia.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.220</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Texas</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Texas</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Women may have been involved in
+			  breach riots in NC, Alabama, Texas and Virginia.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.220</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Virginia</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Virginia</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Women may have been involved in
+			  breach riots in NC, Alabama, Texas and Virginia.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.220</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>North Carolina</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>North Carolina</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Women may have been involved in
+			  breach riots in NC, Alabama, Texas and Virginia.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.220</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Waterloo, Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Soldiers on leave seized an
+			  agent of the Dubuque Herald and repeatedly ducked him in the river.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.220</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Pennsylvania</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Cass Township, PA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>January: 40 Molly Maguires
+			  attacked the house of John McDonald breaking his windows and doors and
+			  threatening to kill him. He escaped.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Dewees.MM, p.52</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>John McDonald</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Michigan</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Hamtrunck, Michigan</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: Gang of African
+			  Americans assaulted a white man.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Schneider. &quot;Detroit,&quot;
+			  Mid. Hist. 58 (1974) 13</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=227 style='height:170.0pt'>
+			  <td height=227 class=xl68 width=41 style='height:170.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Keokuk, Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: About 75 convelescing
+			  soldiers from a nearby military hospital attacked the offices of the Keokuk
+			  Constitution (Dem paper) wrecking the presses and dumping the type out of the
+			  window.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Gray.Hidden Civil War, p.142</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: Hook and Ladder
+			  company 18 attacked Engine Company 26.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Cook.Armies, p.30</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=136 style='height:102.0pt'>
+			  <td height=136 class=xl68 width=41 style='height:102.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: 28 deserters arrested
+			  and a small riot occurred when sympathetic citizens attempted to rescue them.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>McCay.Civil War and NYC, p.185</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=68 style='height:51.0pt'>
+			  <td height=68 class=xl68 width=41 style='height:51.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Richmond</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Mob attacks newspaper
+			  office.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.162</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=68 style='height:51.0pt'>
+			  <td height=68 class=xl68 width=41 style='height:51.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Belleville</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Mob attacks newspaper
+			  office.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.162</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=363 style='height:272.0pt'>
+			  <td height=363 class=xl68 width=41 style='height:272.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Ohio</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Columbus, Ohio</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Party of 100 or so
+			  destroyed newspaper office of Samuel Medery's Crisis. Mob probably composed
+			  of soldiers who opposed the paper's position on the war. Armed with sabers
+			  and revolvers, they were prepared to beat back any opposition. They proceeded
+			  in a workmenlike manner. Officers and police disperse them.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Rosebaum. &quot;Mobbing of the
+			  Crisis,&quot; Ohio St. Arch and History (1950) 150-153</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>Samuel Medery</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=45 style='height:34.0pt'>
+			  <td height=45 class=xl68 width=41 style='height:34.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Hose companies 9 and 50
+			  slugged it out.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Cook.Armies, p.30</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=340 style='height:255.0pt'>
+			  <td height=340 class=xl68 width=41 style='height:255.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Indiana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Cartersville (Connersville?),
+			  Indiana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Mob of soldiesr and Union
+			  League men seize Democratic politician Harrison H. Dodd while he was changing
+			  trains on a trip from Danville to Indianapolis. They jostled and insulted
+			  him, some threatened to hang him, others tar and feather him. However, some
+			  moderates managed to get him released.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>No source given</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>Harrison H. Dodd</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH Edits</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>North Carolina</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Salisbury, NC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Successful Bread riot by
+			  women.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Tire. &quot;Bread or Blood,&quot;
+			  Civil War Times Illustrated, 12 (1974) 12-191</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1863</td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Midwest</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Spring: Democratic party rallies
+			  sometimes broken up by Republican rowdies or by soldiers on leave.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.162</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=272 style='height:204.0pt'>
+			  <td height=272 class=xl68 width=41 style='height:204.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>April: Irish longshoremen
+			  strike. For three days strikers beat up blacks along the cosk in an effort to
+			  enforce an &quot;all-white&quot; rule and enforce standard wage. Metropolitan
+			  police also fought with strikers and when they attempted to protect black
+			  people.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Bernstein, p.119-120</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=317 style='height:238.0pt'>
+			  <td height=317 class=xl68 width=41 style='height:238.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Virginia</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Richmond</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>April: Women lead bread riot.
+			  First march on governor's mansion, then go to the markets, break into stores
+			  and take various items like shoes, etc. Little if any bred involved, although
+			  that was their basic demand. Crowd break up with the arrival of officials.
+			  Not Mary Jackson charged with misdemeanor.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Tice. &quot;Bread or Blood,&quot;
+			  Civil War Times, Illustrated, 12 (1974) 12-191</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'>Mary Jackson</td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=363 style='height:272.0pt'>
+			  <td height=363 class=xl68 width=41 style='height:272.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Indiana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Indianapolis</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>May: 20,000 attend Democratic
+			  meeting to protest Valladigham's arrest. Some Democrats and soldiers engage
+			  in fisticuffs as soldiers interrupted the meeting. Arrests were made. Later,
+			  soldiers stop trains carrying Democrats from meeting and confiscated weapons.
+			  Republicans, later referred to this as battle of Pogue's Run.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.98</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Continuation of
+			  longshoremen's strike turns violent. Irish strikers drive black workers and
+			  others willing to work from the piers.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Bernstein, p.119-120</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Isabel, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Draft protestors seized
+			  enrollment books, claiming that only Democrats were listed.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Sterling, p.256-257</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Hook and Ladder company 4
+			  took on Hose Company 1 and Hook and Ladder Company 3.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Cook.Armies, p.30</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Indiana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Shelbyville, Indiana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Rioting broke out between
+			  supporters of abolitionist and pro-Southerners on Saturday in what was
+			  probably a market day. Several (??) torn down and cattle and swine allowed to
+			  enter a garden.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Turbulent Times, p.94</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=181 style='height:136.0pt'>
+			  <td height=181 class=xl68 width=41 style='height:136.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Pleasant Township, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Mob harassed Provost
+			  Marshall B.F. Westcake during enrollment.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Sterlings. &quot;Civil War Draft
+			  Resisitance,&quot; 256; Klement.Copperheads, p.79</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>B.F. Westcake</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=249 style='height:187.0pt'>
+			  <td height=249 class=xl68 width=41 style='height:187.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Chicago</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Mob pelted provost
+			  Marshall with bricks, etc., and left him unconscious and dead in the street.
+			  Rioters were Irish and acted after two Irishmen had been arrested for failing
+			  to give named to enrolling officers. Several (??) involved.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Sterling. Journal of Illinois St.
+			  Hist., p.259; Klement.Copperheads, p.79</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Hancock, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Bands of armed men visited
+			  enrolling officers in the middle of the night demanding enrollment lists.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Sterling. &quot;Civil War Draft
+			  Resistance,&quot; p.255</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Pottawattamie Co., IA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: A man named Miller hanged
+			  for alleged horse theft</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Black, &quot;Lynchings in
+			  Iowa,&quot; 210 as listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Miller</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=136 style='height:102.0pt'>
+			  <td height=136 class=xl68 width=41 style='height:102.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Massachusetts</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Boston</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Draft riots quickly
+			  quelled.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Lofton.Northern Labor, p.272;
+			  Boston Herald, July 1, 1863</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=136 style='height:102.0pt'>
+			  <td height=136 class=xl68 width=41 style='height:102.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Clark County</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: 50 mounted men terrorized
+			  the family of enrolling officer C.F. Andrews, searched for enrollment books
+			  and threatened to kill him.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Sterling, p.258</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>C.F. Andrews</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=68 style='height:51.0pt'>
+			  <td height=68 class=xl68 width=41 style='height:51.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Franklin County</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Armed band of 100
+			  deserters disrupted draft enrollment.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Sterling, p.258</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July-August: After the Draft
+			  Riots, beatings of black people by gangs of white boys continued through the
+			  summer.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Bernstein, p.66</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=68 style='height:51.0pt'>
+			  <td height=68 class=xl68 width=41 style='height:51.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Oconee, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Sixty armed men threatened
+			  to seize enrollment books.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Sterling, p.257</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=227 style='height:170.0pt'>
+			  <td height=227 class=xl68 width=41 style='height:170.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Buffalo, NY</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Irish stevedores attack
+			  black stevedores for supposedly taking white jobs. Shots exchanged, some
+			  black and white people wounded. Whites attacked black neighborhood called
+			  &quot;Dug's Dive&quot;</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Lofton. &quot;Northern
+			  Labor,&quot; J. of N. Hist., 34 (1949) 262</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=539 style='height:404.0pt'>
+			  <td height=539 class=xl68 width=41 style='height:404.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Massachusetts</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Boston</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Draft riot began when
+			  crowd of angered women attacked two provost marshals who had come to serve
+			  papers in the North End. Idle men soon joined the women and beat a police
+			  officer. At dinner time the crowd swelled and the police were forced to retreat
+			  and barricade themselves in the North Station house. The mayor called upon
+			  the militia who repulsed an attack on the armory using cannon fire. Police
+			  and militia turned back the mob from Dock Square, where the mob hoped to
+			  obtain weapons. Soon after, the riot ended.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Lowe.Policing the City, p.133-134</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=181 style='height:136.0pt'>
+			  <td height=181 class=xl68 width=41 style='height:136.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Staten Island, NY</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Draft riots. Mob burns
+			  carbarn of S.I. RR at Vanderbilt's landing. Attack homes and business of
+			  African Americans. Beat and maybe kill some black people.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Ruekstin. &quot;Draft Riots&quot;</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=136 style='height:102.0pt'>
+			  <td height=136 class=xl68 width=41 style='height:102.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Troy, NY</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Rioting against the draft
+			  and blacks started at Renssler Iron Founding and Albany Mail works. African
+			  Americans threatened.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Loften. &quot;Nothern Labor&quot;,
+			  p.272</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=272 style='height:204.0pt'>
+			  <td height=272 class=xl68 width=41 style='height:204.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Troy, NY</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Draft riot - 300 to 400
+			  laborers from local foundry marched through town, demanding an end to the
+			  draft, stoned andd gutted the office of the Troy times, threatened a black
+			  church and released 80 prisoners from jail. Several houses gutted, too.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Coakley.Role, p.256-257</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New Jersey</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Newark, NJ</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Minor draft riot.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Lofton. &quot;Northern
+			  Labor…,&quot; p.272</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New Jersey</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Jersey City, NJ</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Minor draft riot.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Lofton. &quot;Nothern Labor,&quot;
+			  p.272</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=68 style='height:51.0pt'>
+			  <td height=68 class=xl68 width=41 style='height:51.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>New Hampshire</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Portsmouth, NH</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Draft riot. Local police
+			  manage to quell it.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Coakley.Role, p.258-259</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Pennsylvania</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Lancaster, PA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Mob of German-Americans
+			  gathered around the courthouse and prevented the provost-marshal from drawing
+			  names for the draft. A group of soldiers appeared and mob broke up.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Shankman. &quot;Draft
+			  Resistance,&quot; p.195</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=363 style='height:272.0pt'>
+			  <td height=363 class=xl68 width=41 style='height:272.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>North Carolina</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Raleigh, NC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>September: Georgia troops
+			  attempt to capture unionist editor W.W. Holden when they couldn't find him
+			  they raided the office of his paper, the Standard and threw the tape and some
+			  papers in the street. Two hundred of his supporters retaliatedby attacking the
+			  office of the State Journal, the Confederate paper, completely demolishing
+			  the office.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Tatum.Disloyalty, p.122</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>W.W. Holden</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=227 style='height:170.0pt'>
+			  <td height=227 class=xl68 width=41 style='height:170.0pt;width:31pt'>1863</td>
+			  <td class=xl69 width=87 style='width:65pt'>Ohio</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Springfield, OH</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>October: Republicans rally and
+			  then harassed Democrats. The Reps visited the homes of prominent Dems
+			  &quot;hissed, groaned&quot; and threw stones at the windows, breaking many.
+			  Black and white people did this together.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Klement.Copperheads, p.221</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=408 style='height:306.0pt'>
+			  <td height=408 class=xl68 width=41 style='height:306.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Nebraska</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Plattsmouth</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Vigilantes captured a horse
+			  thief, &quot;Short Nose Bill,&quot; and induced him to betray the rendezvous
+			  location of his gang. The vigilantes hid Bill at the home of D.A. Young. The
+			  thieves were not at the location given by Bill, so the vigilantes returned
+			  and threatened to hang the man. Bill pleaded for his life and provided a
+			  different rendezvous location, where the vigilantes succesfully found their
+			  targets.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Olive Gass, The Vigilantes,
+			  Nebraska's First Defenders, Nebraska History Magazine, 3-18.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>&quot;Short Nose Bill&quot;</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=227 style='height:170.0pt'>
+			  <td height=227 class=xl68 width=41 style='height:170.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Nebraska</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Plattsmouth</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Vigilantes capture three horse
+			  thieves and organize their own informal trial. The vigilantes sentences all
+			  three men to death. One asked to be shot, but was hanged all the same. One
+			  wrote a note to his mother.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Olive Gass, The Vigilantes,
+			  Nebraska's First Defenders, Nebraska History Magazine, 3-18.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Colorado</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Near Parker, CO</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>September: US troops lynch 5
+			  members of the Reynolds Gang for alleged theft.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Leonard, Lynching in Colorado,
+			  Table A.1</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=68 style='height:51.0pt'>
+			  <td height=68 class=xl68 width=41 style='height:51.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Arizona</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Prescott</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: claim club organized</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>The Arizona Miner: June 22, 1864</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Colorado</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Denver, CO</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Haslet lynched for alleged
+			  theft and cheating.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Leonard, Lynching in Colorado,
+			  Table A.1</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Haslet</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=443 style='height:332.0pt'>
+			  <td height=443 class=xl68 width=41 style='height:332.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Montana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Bannack, MT</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>January: Vigilante action
+			  against a gang of thieves and murderers. Henry Plummer, sheriff of Bannock
+			  and Virginia, led the criminal band. Vigilantes lynched Plummer, George Lane,
+			  George Ives, Ned Ray, Buck Stinson, John Wagner alias Dutch John, Red alias
+			  Bevens, Brown, Hayes Lyon, Jack Gallagher, Frank Parish, and Boone Helm. Joe
+			  Pizanthia, known as &quot;Spanish Frank,&quot; hanged and corpse burned.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Bancroft, Popular Tribunals as
+			  listed in Carrigan and Webb, Forgotten Dead and &quot;LYNCH LAW AMONG THE
+			  MORMONS&quot; Glasgow Herald March 26, 1864</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Joe &quot;Spaniard Frank&quot;
+			  Pizanthia; Henry Plummer; George Lane; George Ives; Ned Ray; Buck Stinson;
+			  John &quot;Dutch John&quot; Wagner; Reed alias Bevens; Brown; Hayes Lyon;
+			  Jack Gallagher; Frank Parish; Boone Helm</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=149 style='height:112.0pt'>
+			  <td height=149 class=xl68 width=41 style='height:112.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Natividad</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: On the 9th, Patrocinio
+			  Lopez lynched for alleged murder.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>Monterey Gazette, 12 Feb 1864 as
+			  listed in Carrigan and Webb, Forgotten Dead.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Patrocinio Lopez</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>San Pedro</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: On the 18th, Jesús
+			  Arellanes lynched for alleged murder.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>H. H. Bancroft, Reference Notes as
+			  listed in Carrigan and Webb, Forgotten Dead.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Jesús Arellanes</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=68 style='height:51.0pt'>
+			  <td height=68 class=xl68 width=41 style='height:51.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Missouri</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Missouri</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: Mob seized captured
+			  guerilla John F. Bolin and lynched him.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Fellman.Inside War, p.120</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>John F. Bolin</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=181 style='height:136.0pt'>
+			  <td height=181 class=xl68 width=41 style='height:136.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Nevada</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Auroroa, Nevada</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: Vigilantes take 4 men
+			  out of jail who had been accused of murder and hanged them. Subsequently they
+			  oredered out local toughs from the community.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>McGrath.Gunfighters, p.94-97</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Paris, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: Six soldiers and 14
+			  copperheads fight as soldiers attempt to capture cache of arms. Two soldiers
+			  wounded, one copperhead killed.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Coleman and Spence.
+			  &quot;Charleston Riot,&quot; p.17</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Appanoose Co., IA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>February: John Seaman shot for
+			  alleged horse theft and arson</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Black, &quot;Lynchings in
+			  Iowa,&quot; 212 as listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>John Seaman</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Hordin, Calhoun county, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Fatal encounter - after a
+			  soldier shot a man who cheered Jeff Davis.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Gray.Hidden Civil War, p.165</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=249 style='height:187.0pt'>
+			  <td height=249 class=xl68 width=41 style='height:187.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Charleston, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Riot occurs on court day
+			  between local copperheads and soldiers returning from furlough. Nine killed
+			  in gun battle that started as an argument between copperhead and soldiers.
+			  Six were soldiers, one a Republican bystander.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Coleman and Spence.
+			  &quot;Charleston Riot&quot;</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=93 style='height:70.0pt'>
+			  <td height=93 class=xl68 width=41 style='height:70.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Colorado</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Spanish Bar</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: A man flogged and banished
+			  for &quot;attempted outrage on a child.&quot;</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>The Daily Mining Journal, June 15,
+			  1864</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=187 style='height:140.0pt'>
+			  <td height=187 class=xl68 width=41 style='height:140.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Nevada</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>La Plata, NV</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Vigilantes shot and
+			  clubbed to death José Aniceto Baldenbro and Simon Montoya for not cooperating
+			  with them.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>Virginia Daily Union (Virginia
+			  City), 14 June 1864 as listed in Carrigan and Webb, Forgotten Dead.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>José Aniceto Baldenbro; Simon
+			  Montoya</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>NYC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Lager-beer saloon at Tenth
+			  ave. Brawl turned into a battle with police. One man killed, six arrested.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Cook.Armies, p.19</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Montana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Virginia City</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>August: Pat Brady shot Lynch
+			  while trying to shoot Murphy. The miners organized a hasty trial and lynched
+			  Brady that evening. Jem Kelly was deemed an accessory to murder and given
+			  fifty lashes.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>The Rocky Mountain News, August
+			  27, 1864 and Dimdsale, The Vigilantes of Montana, 192</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Pat Brady; Jem Kelly</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=205 style='height:154.0pt'>
+			  <td height=205 class=xl68 width=41 style='height:154.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Montana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Virginia City</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Septeber: The &quot;vigies&quot;
+			  caught Jem Kelly for stealing a mule and hanged him. They had previously
+			  given Kelly fifty lashes for accessory to murder.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>The Rocky Mountain News, September
+			  21, 1864 and Dimsdale, The Vigilantes of Montana, 192</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Jem Kelly</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=149 style='height:112.0pt'>
+			  <td height=149 class=xl68 width=41 style='height:112.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Near Snelling, CA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>September: Unknown Mexican
+			  lynched for alleged theft.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>Sacramento Union, 23 Sept 1864 as
+			  listed in Carrigan and Webb, Forgotten Dead.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=149 style='height:112.0pt'>
+			  <td height=149 class=xl68 width=41 style='height:112.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Near Snelling, CA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>September: Unknown Mexican
+			  lynched for alleged theft.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>Sacramento Union, 23 Sept 1864 as
+			  listed in Carrigan and Webb, Forgotten Dead.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Pennsylvania</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Minersville, PA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>January: A crowd of Molly
+			  Maguires armed with clubs attacked Thomas Trear and Mr. Benseman.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Dewees.MM, p.52</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>Thomas Trear; Benseman</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Paris, Edgar County, Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>March: Group of furloughed
+			  soldiers threatened violence, causing Democratic congressman John M. Eden to
+			  cancel speech. Democratic supporters however get into brawl with the
+			  soldiers.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Gray.Hidden Civil War, p.165</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>John M. Eden</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH Edits</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=272 style='height:204.0pt'>
+			  <td height=272 class=xl68 width=41 style='height:204.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Indiana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Shelbyville</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>April: Fight between soldiers of
+			  52nd and 33rd Regiments over bragging rights. Some injuries. Serious weapons
+			  shown, but not used. An Indianapolis paper reported that the riot was between
+			  copperheads and soldiers. Local paper denies this.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>&quot;Turbulent Times,&quot; p.96</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=363 style='height:272.0pt'>
+			  <td height=363 class=xl68 width=41 style='height:272.0pt;width:31pt'>1864</td>
+			  <td class=xl69 width=87 style='width:65pt'>Kansas</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Forth Leavenworth, KS</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>December: Pvt. Charles Lockman
+			  murdered Pvt. John Groce, both of the Second Colorado Cavalry. Disregarding
+			  military regulations, the rest of the men, lead by Lt. Wise, organized their
+			  own trial and lynched Lockman. Wise would be court martialed, but recieved a
+			  remitted sentence.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Christopher Rein, The Second
+			  Colorado Cavalry: A Civil War Regiment on the Great Plains (Norman:
+			  University of Oklahoma Press, 2020), 37.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Charles Lockman</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=340 style='height:255.0pt'>
+			  <td height=340 class=xl68 width=41 style='height:255.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Georgia</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Augusta, Georgia</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>January: Some black soldiers,
+			  joined by local black people, foght with whites over &quot;a widow lady…who
+			  at the time had several young ladies staying with her.&quot; Other Union
+			  soldiers quelled the riot, but not until six African Americans had been killed
+			  or mortally wounded. The riot followed rumors that some Irishmen had attacks
+			  black people.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Garson and O'Brien, p.247</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=249 style='height:187.0pt'>
+			  <td height=249 class=xl68 width=41 style='height:187.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>South Carolina</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Charleston, SC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Men from New York regiment
+			  fought with black soldiers in the 21st US colored troops. Fighting began with
+			  a shooting skirmish at the market place on the 8th. Ended with New Yorkers
+			  ordered out of the city. At least one black person killed.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Williamson.After Slavery, p.258</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Tennessee</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Springfield, Tennessee</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>September: Confederate guerillas
+			  killed one black person, tortured some, and robbed others.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Garson and O'Brien, p.247</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Virginia</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Alexandria, VA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>December: Riot on Christmas Day
+			  between white and black people. 14 black people and 2 white people killed.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Garson and O'Brien, p.247;
+			  Hennessey, p.17</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=453 style='height:340.0pt'>
+			  <td height=453 class=xl68 width=41 style='height:340.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Pennsylvania</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Philadelphia</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>An attack on Edward Ingersall
+			  (not sure by one or more persons) for a speech he made in NY. He defended
+			  himself with a cane and then drew a pistol. He was arrested for A+B. Outside
+			  Spring Garden Hall a crowd gathered and threatened to lynch him. His brother
+			  arrived and attempted to offer bail, but the charge was enlarged to treason.
+			  On leaving, Ingersall was attacked and injured by the crowd. Edward was sent
+			  elsewhere to avoid further disorder.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Scharf and Wescott, p.825</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'>Edward Ingersall</td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=272 style='height:204.0pt'>
+			  <td height=272 class=xl68 width=41 style='height:204.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Colorado</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Denver</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>April: A people's court tries
+			  William Tabor (?) for rejoicing at the assasination of Abraham Lincoln. The
+			  court proposes flogging, shaving, tar and feathering, and banishing the man.
+			  Eventually, he is simply surrendered to the military.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>The Rocky Mountain News, April 21,
+			  1865</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>William Tabor</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=453 style='height:340.0pt'>
+			  <td height=453 class=xl68 width=41 style='height:340.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Nebraska</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Kearney</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>April: A teamster, Fox, murdered
+			  a man named Eldred en route to Colorado. Members of the 17th Kansas captrued
+			  Fox and brought him to Kearney, where a &quot;people's court&quot; sentenced
+			  him to hanging. Fox requested the sheriff of the people's court shoot him
+			  instead, and refused both blindfold and hand bindings. The sheriff
+			  accomodated these wishes, and &quot;the fiend thus atoned blood for blood, as
+			  he deserved.&quot;</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>The Rocky Mountain News, April 11,
+			  1865</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Fox</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=340 style='height:255.0pt'>
+			  <td height=340 class=xl68 width=41 style='height:255.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Washington</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Walla Walla</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>April: Angered by horse and
+			  cattle theft, the citizens of Walla Walla formed a vigilance committee. The
+			  vigilantes proceeded to hang 15 men. Doc. Reed, &quot;N***** Jim,&quot;
+			  McKenzie, Tom Reeves, Charles Wilson, and Joseph Petis all named as victims
+			  of the lynching. The newspaper does not condem the action.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>Seattle Weekly Gazzette, April 27
+			  1865. Also listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Doc. Reed; N***** Jim; McKenzie;
+			  Tom Reeves; Charles Wilson; Joseph Petis</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=249 style='height:187.0pt'>
+			  <td height=249 class=xl68 width=41 style='height:187.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Berne, Albany County, NYS</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>May: Farm of Hiram Secor sold
+			  under Supreme Court decree for Van Rensselaer. Band of masked and disguised
+			  Indians ejected new occupants. Efforts to put them back in were resisted and
+			  sheriff had to use armed force.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Rosendale. &quot;Closing
+			  Phases…,&quot; Proc. Of NYS H.S., 8 (1909) 239</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Mills Co., IA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>May: Hanging of James Henderson
+			  for alleged horse theft and threat to blow up the treasurer's office</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Black, &quot;Lynchings in
+			  Iowa,&quot; 217</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>James Henderson</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=227 style='height:170.0pt'>
+			  <td height=227 class=xl68 width=41 style='height:170.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Minnesota</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Mankato</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>May: John Campbell, a Native
+			  man, hanged for alleged murder.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Ziebarth, &quot;Judge Lynch in
+			  Minnesota,&quot; 72 as listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>John Campbell</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=149 style='height:112.0pt'>
+			  <td height=149 class=xl68 width=41 style='height:112.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>California</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Eight Miles from Montery</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>May: Juan Higuera, the son of
+			  1854 victim, lynched for alleged murder of a deputy.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>Monterey Gazette, 19 May 1865 as
+			  listed in Carrigan and Webb, Forgotten Dead.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Juan Higuera</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Pottawattamie Co., IA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>June: Man named Lacey hanged for
+			  alleged theft</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Black, &quot;Lynchings in
+			  Iowa,&quot; 217-218 as listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Lacey</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=113 style='height:85.0pt'>
+			  <td height=113 class=xl68 width=41 style='height:85.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Michigan</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Hancock and Houghton, Michigan</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Upper Peninsular copper
+			  miners riot and strike. Military intimidates them back to work.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Rodgers. &quot;Deliverance,&quot;
+			  MH, p.16-21</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Michigan</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Marquette, Michigan</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Upper Peninsular iron
+			  miners strike over wage cut and riot, destroying property. Military brought
+			  in two times to intimidate the miners back to work.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Rodgers. &quot;Deliverance,&quot;
+			  MH, p.16-21</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=149 style='height:112.0pt'>
+			  <td height=149 class=xl68 width=41 style='height:112.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Illinois</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Nashville, Washington Co.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>July: Hanging of a man named
+			  &quot;White&quot; for alleged murder and arson</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>New York Times, July 16, 1865 as
+			  listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>White</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=168 style='height:126.0pt'>
+			  <td height=168 class=xl68 width=41 style='height:126.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Indiana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Shelburn, Sullivan Co.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>August: Hanging of man named
+			  Miller for alleged murderous assault</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>New York Times, August 5, 1865 as
+			  listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Miller</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=168 style='height:126.0pt'>
+			  <td height=168 class=xl68 width=41 style='height:126.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Oregon</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>La Grande</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>August: Hispanic man labeled
+			  &quot;Mexican&quot; hanged for alleged horse theft</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl70 width=88 style='width:66pt'>Seatte Weekly, August 26, 1865 as
+			  listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=159 style='height:119.0pt'>
+			  <td height=159 class=xl68 width=41 style='height:119.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>North Carolina</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Chapel Hill, NC</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>September: College students and
+			  other whites attacked a black meeting. The black people counter-attacked with
+			  sticks forcing the white people to retreat.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Rable, p.29</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=272 style='height:204.0pt'>
+			  <td height=272 class=xl68 width=41 style='height:204.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>New York</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Niagara city, Niagara co.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>September: A mob, colluding with
+			  local police, torched two houses belonging to Maria Moody. At least one
+			  functioned as a brothel. Members of the mob siezed Moody and placed her in
+			  the local jail until the destruction was complete.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Transcript Appeals. The File of
+			  Opinions in Cases Argued before the Court of Appeals of the State of New
+			  York, 273-277</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Maria Moody</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Iowa</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Clinton Co., IA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>October: Hanging of James Hiner
+			  for alleged horse theft</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Black, &quot;Lynchings in
+			  Iowa,&quot; 219 as listed in Pfeifer, The Roots of Rough Justice.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>James Hiner</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=136 style='height:102.0pt'>
+			  <td height=136 class=xl68 width=41 style='height:102.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Pennsylvania</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Pit Hole</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>October: Vigilance committee
+			  formed in response to highway robberies. Lynch law and &quot;no mercy&quot;
+			  threatened.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>The Nebraska City News, October
+			  14, 1865</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=340 style='height:255.0pt'>
+			  <td height=340 class=xl68 width=41 style='height:255.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Montana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Virginia City</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>October: Two alleged horse
+			  thieves - John Morgan and John Jackson - lynched by Vigilance Committee. To
+			  their corpse was pinned the warning &quot;Road Agents beware.&quot;</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>The Rocky Mountian News, October
+			  20, 1865 and Dimsdale, The Vigilante of Montana 106 and Dillon, The Montana
+			  Vigilantes 1863–1870, 187</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>John Morgan; John Jackson</td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Kentucky</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Louisville, Kentucky</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>November-May: Race riot.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Holmes. &quot;Memphis Race
+			  Riot,&quot; p.197</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=91 style='height:68.0pt'>
+			  <td height=91 class=xl68 width=41 style='height:68.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Tennessee</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Chattenooga</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>Race riot.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Holmes. &quot;Memphis Race
+			  Riot,&quot; p.197</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=136 style='height:102.0pt'>
+			  <td height=136 class=xl68 width=41 style='height:102.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Nebraska</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl69 width=87 style='width:65pt'>Nebraska City</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>December: Residents meet to
+			  organize a vigilance committee following the murder of John Baldwin and the
+			  robbery of $500.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Nebraska Herald, December 20, 1865</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl69 width=71 style='width:53pt'>PTH</td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=204 style='height:153.0pt'>
+			  <td height=204 class=xl68 width=41 style='height:153.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Louisiana</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>New Orleans, LA</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>December: Black and white
+			  longshoremen strike for higher wages. They marched along the levee in a
+			  procession and beat up some men still working. The police then interceded,
+			  breaking up the strikers.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Somers. &quot;Black and
+			  White,&quot; p.30</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+			 <tr height=136 style='height:102.0pt'>
+			  <td height=136 class=xl68 width=41 style='height:102.0pt;width:31pt'>1865</td>
+			  <td class=xl69 width=87 style='width:65pt'>Tennessee</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=87 style='width:65pt'>Clarkesville, TN</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=172 style='width:129pt'>December: Riot broke out when a
+			  policeman attempted to arrest a soldier. Battle between white and black
+			  people; several wounded.</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl68 width=88 style='width:66pt'>Garson and O'Brian, p.247</td>
+			  <td class=xl68 width=24 style='width:18pt'></td>
+			  <td class=xl66 width=75 style='width:56pt'></td>
+			  <td class=xl66 width=87 style='width:65pt'></td>
+			  <td class=xl66 width=71 style='width:53pt'></td>
+			  <td colspan=4 style='mso-ignore:colspan'></td>
+			 </tr>
+
+			 <![if supportMisalignedColumns]>
+			 <tr height=0 style='display:none'>
+			  <td width=41 style='width:31pt'></td>
+			  <td width=87 style='width:65pt'></td>
+			  <td width=24 style='width:18pt'></td>
+			  <td width=87 style='width:65pt'></td>
+			  <td width=24 style='width:18pt'></td>
+			  <td width=172 style='width:129pt'></td>
+			  <td width=24 style='width:18pt'></td>
+			  <td width=88 style='width:66pt'></td>
+			  <td width=24 style='width:18pt'></td>
+			  <td width=75 style='width:56pt'></td>
+			  <td width=87 style='width:65pt'></td>
+			  <td width=71 style='width:53pt'></td>
+			  <td width=87 style='width:65pt'></td>
+			  <td width=87 style='width:65pt'></td>
+			  <td width=87 style='width:65pt'></td>
+			  <td width=87 style='width:65pt'></td>
+			 </tr>
+			 <![endif]>
+			</table>
+
+			<nav class = "pnnavbar"/>
+				<div class="pnnav">
+					<a href="pe7.html">Previous</a>
+				</div>
+
+
+			</nav>
+<image src="../images/nebmap3.png" class = mid></div>
+  </body>
