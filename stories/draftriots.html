@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>
+			Riot Acts: The "Draft Riots" of 1863
+		</title>
+		<!-- Leaflet -->
+		<link rel="stylesheet" href="../lib/leaflet/leaflet.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/nouislider.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/MarkerCluster.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/MarkerCluster.Default.css"/>
+		<script src="../lib/leaflet/leaflet.js" ></script>
+		<script src="../lib/leaflet/leaflet.markercluster.js" ></script>
+		<script src="../data/borders.json"></script>
+		<script src="../data/Labor.json"></script>
+		<script src="../data/Firefighter.json"></script>
+		<script src="../data/Law.json"></script>
+		<script src="../data/Political.json"></script>
+		<script src="../data/Racial.json"></script>
+		<script src="../data/Religious.json"></script>
+		<script src="../data/wards.json"></script>
+		<script src="../data/violence.json"></script>
+		<script src="../data/Vigilante.json"></script>
+		<script src="../data/Ethnic.json"></script>
+		<script src="../data/Land.json"></script>
+		<script src="../data/Acts.json"></script>
+		<script src="../lib/leaflet/nouislider.js" ></script>
+		<style type="text/css">
+			#map {height : 800px; background-color: #f2f2f2; margin: 20px; border : 2px solid #f2f2f2; border-radius: 10px;}
+
+			.legend {
+					padding: 6px 8px;
+					background-color: rgba(255,255,255,0.8);
+					box-shadow: 0 0 15px rgba(0,0,0,0.2);
+					border-radius: 5px;
+
+				}
+				.legend i {
+					width: 27px;
+					height: 27px;
+					float: left;
+					margin-right: 16px;
+					opacity: 0.7;
+				}
+				div.legend.leaflet-control br {
+					clear: both;
+				}
+
+
+
+				.center {
+					display: block;
+					margin-top: 40px;
+					margin-bottom: 40px;
+					margin-left: auto;
+					margin-right: auto;
+					width: 35%;
+					}
+
+				.textright {
+					float: right;
+					width: 300px;
+					opacity: 65%;
+					}
+
+				.mid {
+					display: block;
+					margin: 0;
+					width: 100%;
+					opacity: 85%;
+					}
+
+					.mid2 {
+						display: block;
+						margin-left: 0;
+						margin-right: 0;
+						width: 100%;
+						opacity: 55%;
+						}
+
+			.end {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 35%;
+					}
+
+					h1 {
+								font-family: Georgia;
+						    color: #8b0000;
+								margin: 20px;
+								font-size:40px;
+								font-weight: normal;
+						  }
+
+					h2 {
+								font-family: Verdana;
+						    color: #8b0000;
+								margin: 20px;
+								font-size: 30px;
+								font-weight: normal;
+								  }
+
+					p {
+						font-family: Verdana;
+						color: black;
+						margin: 20px;
+						font-size: 18px;
+					}
+
+			.topnav {
+				background-color: #f2f2f2;
+				overflow: hidden;
+				border-radius: 0px;
+				margin-bottom: 15px;
+				text-align: center;
+				justify-content: center;
+			}
+
+			.leftnav a {
+				color: #bfbdbd;
+				text-align: center;
+				display: inline-block;
+				justify-content: center;
+				padding: 15px 25px;
+				margin: 0;
+				text-decoration: none;
+				font-size: 18px;
+				font-family: Verdana;
+			}
+
+			.leftnav a:hover {
+				color: #E2E2E2;
+			}
+
+			.active {
+				color: #8b0000;
+
+			}
+
+
+			.brightad {
+				display: inline-block;
+				margin-top: 10px;
+				margin-right: 0px;
+				width: 30%;
+				padding-left: 3.33%;
+			}
+
+				body,html {
+					margin:0;
+					padding:0;
+				}
+				body{
+								background-color:white;
+						}
+
+		</style>
+	</head>
+	<body style="background-color: #f2f2f2;">
+		<div id="wrapper">
+			<a href="../index.html">
+	    <image src="../images/musketacts.png" class = center></div>​​​​​​​​​​
+			</a>
+			<nav class = "topnav"/>
+				<div class="leftnav">
+					<a href="../index.html">Home</a>
+					<a href="../tmap.html">Time Map</a>
+					<a href="../qmap.html">Queryable Map</a>
+					<a href="../Source/source.html">Network Analysis</a>
+					<a href="../aigen.html">aiRiot</a>
+					<a href="../pe/pe.html">People and Events</a>
+					<a class = "active" href="stories.html">Stories</a>
+					<a href="../about/about.html">About</a>
+				</div>
+			</nav>
+
+				<image src="../images/dr.png" class = mid2></div>
+
+		<h1>Manhattan Burning: The New York City Draft Riots of 1863</h1>
+		<h2>By Patrick Hoehne</h2>
+		<p>
+			The so-called New York City Draft Riots of 1863 remain one of the bloodiest instances of civil unrest in American history. What ostensibly started as a raucous protest against conscription quickly morphed into a violent campaign of terror directed against New York City’s African American population. Rioters, drawn mostly from New York City’s poor Irish population, beat, tortured, and lynched African Americans. Some torched Black homes and neighborhoods in an attempt to erase any presence of African Americans within the city. Meanwhile, massive crowds of rioters clashed with police forces and later soldiers in a desperate struggle to control Manhattan.
+			<br>
+			<br>
+			Explore some of the principal confrontations and acts of violence in the map below.
+				<br>
+				<br>
+			</p>
+
+		</p>
+		<div id="map"></div>
+		<div style="margin-right: auto; margin-left: auto; width: 90%; margin-bottom: 10px; text-align: center;">
+		</div>
+
+		<script>
+
+		var base = {
+		  'Empty': L.tileLayer(''),
+		  'OpenStreetMap': L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			'attribution': 'Map data &copy; OpenStreetMap contributors'
+		}),
+			'NYS': L.tileLayer('https://maps.georeferencer.com/georeferences/04265620-e2ae-5007-80f7-80693f65f3e4/2016-05-27T10:26:05.935840Z/map/{z}/{x}/{y}.png?key=dX71XgieCYeumpnUictn', {
+			'attribution': 'M. Dripps, 1862. Tiles courtesy of David Rumsey Map Collection.'})
+		};
+
+		var map = L.map('map', {
+		  'center': [0, 0],
+		  'zoom': 0,
+			'minZoom': 4,
+		  'layers': [
+			base.NYS
+		  ]
+
+		});
+
+
+
+
+		function bordersStyle(feature) {
+
+				return {
+					fillColor: '#bfbdbd',
+					weight: 2,
+					opacity: 0,
+					color: 'black',
+					dashArray : 1,
+					fillOpacity : 0
+
+				};
+			}
+
+		function bordersPop(feature, layer) {
+				var popupContent = 'Ward: ' + String(feature.properties['Name']);
+				layer.bindPopup(popupContent);
+			}
+
+
+
+
+		function ActsPop(feature, layer) {
+				var popupContent = 'Description: ' + String(feature.properties['Description']) + '<br>Source: ' + String(feature.properties['Source'])+ '<br>Location: ' + String(feature.properties['Location'])+ '<br>Time: ' + String(feature.properties['Time'])+ '<br>Date: ' + String(feature.properties['Date']);
+				layer.bindPopup(popupContent);
+			}
+		function ActsStyle(feature, latlng) {
+
+				return L.circleMarker(latlng, {
+					radius: 6.0,
+					fillColor: '#40FF00',
+					color: 'white',
+					weight: 2,
+					opacity: 1.0,
+					fillOpacity: 1
+				})
+			}
+
+
+		var points = L.geoJson(violence,{
+			onEachFeature: ActsPop
+		});
+
+
+
+		var clusterSettings = {
+			  maxClusterRadius: 20,
+			  singleMarkerMode: true,
+			  spiderLegPolylineOptions: {
+				color: '#FFF',
+				weight: 3,
+				opacity: 1,
+			  },
+
+			};
+
+		var markers = L.markerClusterGroup(clusterSettings);
+		markers.addLayer(points);
+		markers.addTo(map);
+
+		bordersLayer =  L.geoJson(wards,{
+					style : bordersStyle,
+					onEachFeature: bordersPop,
+				})
+
+
+				bordersLayer.addTo(map)
+				map.fitBounds(bordersLayer.getBounds());
+
+			//Patrick Hoehne
+		</script>
+		<h2>The Riots</h2>
+
+		<p class=MsoNormal><span style='font-family:"Verdana",sans-serif;color:black;
+		mso-themecolor:text1'>As slavery, race, and labor became increasingly heated
+		national issues in the years immediately preceding the Civil War, politicians racialized
+		economic anxieties in order to win votes and galvanize their base. In 1860,
+		during the presidential election, a Democratic politician made an explicit
+		connection between local caloric concerns and national politics when he
+		thundered to New York City’s “Irish laborers” to “take care when you cast your
+		votes for Lincoln that you are not putting out the fire on your domestic hearth
+		and excluding light for your table and bringing ruin on your wife and children.
+		When they say that they vote to exclude slavery, let them take care that they
+		do not exclude bread from their own tables.”<a style='mso-endnote-id:edn1'
+		href="#_edn1" name="_ednref1" title=""><span class=MsoEndnoteReference><span
+		style='mso-special-character:footnote'><![if !supportFootnotes]><span
+		class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Verdana",sans-serif;
+		mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+		"Times New Roman";color:black;mso-themecolor:text1;mso-ansi-language:EN-US;
+		mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></a>
+		Fearmongering regarding slavery and labor continued following Lincoln’s
+		victory. In one vehemently racist 1861 piece appearing in <i style='mso-bidi-font-style:
+		normal'>The New York Herald</i>, allies of mayoral candidate Fernando Wood
+		concluded their appeal by writing that “our laboring classes, especially among
+		the Irish and Germans, will show that they do not intend to be supplanted in
+		their daily occupations by emancipated slaves, while they themselves are either
+		driven into exile or the poorhouse.”<a style='mso-endnote-id:edn2' href="#_edn2"
+		name="_ednref2" title=""><span class=MsoEndnoteReference><span
+		style='mso-special-character:footnote'><![if !supportFootnotes]><span
+		class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Verdana",sans-serif;
+		mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+		"Times New Roman";color:black;mso-themecolor:text1;mso-ansi-language:EN-US;
+		mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a>
+		In the ensuing 1861 mayoral election, working class Germans and Irish
+		overwhelmingly refused to support the Republican candidate, and 65.8 percent of
+		New York City voters sided with a Democrat. However, bitter infighting had
+		resulted in two separate Democratic candidates jostling for the office, and the
+		Republican George Opdyke would win the mayoralty with just over 34 percent of
+		the vote. Partially as a result of the Democratic rhetoric surrounding
+		anti-slavery candidates, Opdyke generally performed poorly in Irish and German
+		wards. His worst results were in the heavily Irish Fourth and Sixth Wards,
+		where he won 12 and 9 percent of the vote, respectively.<a style='mso-endnote-id:
+		edn3' href="#_edn3" name="_ednref3" title=""><span class=MsoEndnoteReference><span
+		style='mso-special-character:footnote'><![if !supportFootnotes]><span
+		class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Verdana",sans-serif;
+		mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+		"Times New Roman";color:black;mso-themecolor:text1;mso-ansi-language:EN-US;
+		mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[3]</span></span><![endif]></span></span></a>
+		<o:p></o:p></span></p>
+
+		<p class=MsoNormal><span style='font-family:"Verdana",sans-serif;color:black;
+		mso-themecolor:text1'>Despite the brief wave of patriotism that swept the city
+		with the outbreak of the war, concerns regarding abolition remained. With the
+		Emancipation Proclamation on January 1, 1863, racial and economic tensions in
+		New York City began to reach a fever-pitch. Later in January, employers tried
+		to cut the pay of longshoremen down from $1.50 to $1.12. A wave of strikes
+		ensued, and, in March – the same month as the enactment of the Enrollment Act –
+		a foreman on the Erie Company Railway Pier attempted to hire Black
+		strikebreakers, leading to a sudden outburst of violence in which the Irish
+		strikers successfully drove off their would-be replacements.<a
+		style='mso-endnote-id:edn4' href="#_edn4" name="_ednref4" title=""><span
+		class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+		class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Verdana",sans-serif;
+		mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+		"Times New Roman";color:black;mso-themecolor:text1;mso-ansi-language:EN-US;
+		mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[4]</span></span><![endif]></span></span></a>
+		Sporadic violence against African American New Yorkers continued throughout the
+		spring and early summer months, until, on Monday, July 13, members of the “Black Joke” Fire Engine Company No. 33
+		battered down the doors of the Ninth District provost marshal’s office and
+		sparked the New York City Draft Riots. <o:p></o:p></span></p>
+
+		<p class=MsoNormal><span style='font-family:"Verdana",sans-serif;color:black; mso-themecolor:text1'>What began on
+		July 13, <span class=GramE>1863</span> at the Provost Marshall’s Office may
+		have started out, for some, as a genuine protest against the draft and the
+		Union war effort. By the second day of rioting, however, the unrest had
+		transformed into something much more terrible and complex. Observing the
+		behavior of anti-draft German workers helps to demonstrate this point.
+		Working-class Germans had voted with the Irish against Opdyke, and as a group
+		supported the anti-conscription action of the first day, but, when the riot grew
+		more <span class=GramE>radical</span> they quickly began to support the city,
+		and even organized militias to protect their neighborhoods from Irish rioters.<a
+		style='mso-endnote-id:edn5' href="#_edn5" name="_ednref5" title=""><span
+		class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+		class=MsoEndnoteReference><span style='font-size:12.0pt;font-family:"Verdana",sans-serif;
+		mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+		"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+		mso-bidi-language:AR-SA'>[5]</span></span><![endif]></span></span></a> The more
+		radical Irish rioters were not satisfied in winning the sympathy and support of
+		local elites regarding conscription – they were intent on remaking the city.
+		New York City’s African American inhabitants would suffer most acutely in the
+		nightmarish campaign of violence which followed. African American and Irish New
+		Yorkers competed within New York City’s unskilled labor market, and many Irish
+		feared that the end of enslavement would bring even greater economic competition
+		and precarity. During the riots, lynching, arson, and ritual mutilation were employed
+		as tools of terror, designed to compel Black New Yorkers to abandon the city. The
+		true extent of the suffering endured by the city’s African American population will
+		never be fully known.<o:p></o:p></span></p>
+
+
+
+		<div style='mso-element:endnote-list'><![if !supportEndnotes]><br clear=all>
+
+		<hr align=left size=1 width="33%">
+
+		<![endif]>
+
+		<div style='mso-element:endnote' id=edn1>
+
+		<p class=MsoEndnoteText style='text-indent:.5in'><a style='mso-endnote-id:edn1'
+		href="#_ednref1" name="_edn1" title=""><span class=MsoEndnoteReference><span
+		style='font-family:"Verdana",sans-serif'><span style='mso-special-character:
+		footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+		style='font-size:10.0pt;font-family:"Verdana",sans-serif;mso-fareast-font-family:
+		Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+		mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></span></a><span
+		style='font-family:"Verdana",sans-serif'> “Another Union Meeting,” <i
+		style='mso-bidi-font-style:normal'>The New York Herald</i>, October 28, 1860. <o:p></o:p></span></p>
+
+		</div>
+
+		<div style='mso-element:endnote' id=edn2>
+
+		<p class=MsoEndnoteText style='text-indent:.5in'><a style='mso-endnote-id:edn2'
+		href="#_ednref2" name="_edn2" title=""><span class=MsoEndnoteReference><span
+		style='font-family:"Verdana",sans-serif'><span style='mso-special-character:
+		footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+		style='font-size:10.0pt;font-family:"Verdana",sans-serif;mso-fareast-font-family:
+		Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+		mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></span></a><span
+		style='font-family:"Verdana",sans-serif'> “The Army, the N****r Question, and
+		the Coming Election,” <i style='mso-bidi-font-style:normal'>The New York Herald</i>,
+		November 28, 1861. <o:p></o:p></span></p>
+
+		</div>
+
+		<div style='mso-element:endnote' id=edn3>
+
+		<p class=MsoEndnoteText style='text-indent:.5in'><a style='mso-endnote-id:edn3'
+		href="#_ednref3" name="_edn3" title=""><span class=MsoEndnoteReference><span
+		style='font-family:"Verdana",sans-serif'><span style='mso-special-character:
+		footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+		style='font-size:10.0pt;font-family:"Verdana",sans-serif;mso-fareast-font-family:
+		Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+		mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[3]</span></span><![endif]></span></span></span></a><span
+		style='font-family:"Verdana",sans-serif'> Percentages tabulated from “The
+		Tribune Almanac for 1862” in <i style='mso-bidi-font-style:normal'>The Tribune
+		Almanac for the Years 1838 to 1868 </i>(New York City: New York Tribune, 1868),
+		58. For more on voting, city politics, the rioting, and an excellent map of the
+		1863 mayoral election, see Bernstein. <o:p></o:p></span></p>
+
+		</div>
+
+		<div style='mso-element:endnote' id=edn4>
+
+		<p class=MsoEndnoteText style='text-indent:.5in'><a style='mso-endnote-id:edn4'
+		href="#_ednref4" name="_edn4" title=""><span class=MsoEndnoteReference><span
+		style='font-family:"Verdana",sans-serif;color:black;mso-themecolor:text1'><span
+		style='mso-special-character:footnote'><![if !supportFootnotes]><span
+		class=MsoEndnoteReference><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+		mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+		"Times New Roman";color:black;mso-themecolor:text1;mso-ansi-language:EN-US;
+		mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[4]</span></span><![endif]></span></span></span></a><span
+		style='font-family:"Verdana",sans-serif;color:black;mso-themecolor:text1'> <span
+		class=SpellE>Albon</span> P. </span><span style='font-family:"Verdana",sans-serif;
+		mso-fareast-font-family:"Times New Roman";color:black;mso-themecolor:text1;
+		'>Man Jr., &quot;Labor Competition and the New York Draft Riots
+		of 1863,” <i style='mso-bidi-font-style:normal'>The Journal of Negro History</i>
+		36, no. 4 (1951): 394-400. </span><span style='font-family:"Verdana",sans-serif;
+		color:black;mso-themecolor:text1'><o:p></o:p></span></p>
+
+		</div>
+
+		<div style='mso-element:endnote' id=edn5>
+
+		<p class=MsoEndnoteText style='text-indent:.5in'><a style='mso-endnote-id:edn5'
+		href="#_ednref5" name="_edn5" title=""><span class=MsoEndnoteReference><span
+		style='font-family:"Verdana",sans-serif'><span style='mso-special-character:
+		footnote'><![if !supportFootnotes]><span class=MsoEndnoteReference><span
+		style='font-size:10.0pt;font-family:"Verdana",sans-serif;mso-fareast-font-family:
+		Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+		mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[5]</span></span><![endif]></span></span></span></a><span
+		style='font-family:"Verdana",sans-serif'> <span class=SpellE>Iver</span>
+		Bernstein, <i style='mso-bidi-font-style:normal'>The New York City Draft Riots:
+		Their Significance for American Society and Politics in the Age of the Civil
+		War</i> (Oxford: Oxford University Press, 1990), 42. </span><o:p></o:p></p>
+
+		</div>
+
+		</div>
+		<image src="../images/nebmap3.png" class = mid></div>
+</body>

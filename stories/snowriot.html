@@ -1,0 +1,3108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>
+			Riot Acts: "Rereading the Riot Acts"
+		</title>
+		<!-- Leaflet -->
+		<link rel="stylesheet" href="../lib/leaflet/leaflet.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/nouislider.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/MarkerCluster.css"/>
+		<link rel ="stylesheet" href="../lib/leaflet/MarkerCluster.Default.css"/>
+		<script src="../lib/leaflet/leaflet.js" ></script>
+		<script src="../lib/leaflet/leaflet.markercluster.js" ></script>
+		<script src="../data/borders.json"></script>
+		<script src="../data/Acts.json"></script>
+		<script src="../lib/leaflet/nouislider.js" ></script>
+		<style type="text/css">
+
+		.legend {
+				padding: 6px 8px;
+				background-color: rgba(255,255,255,0.8);
+				box-shadow: 0 0 15px rgba(0,0,0,0.2);
+				border-radius: 5px;
+
+			}
+			.legend i {
+				width: 27px;
+				height: 27px;
+				float: left;
+				margin-right: 16px;
+				opacity: 0.7;
+			}
+			div.legend.leaflet-control br {
+				clear: both;
+			}
+
+
+
+			.center {
+				display: block;
+				margin-top: 40px;
+				margin-bottom: 40px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 35%;
+				}
+
+			.textright {
+				float: right;
+				width: 300px;
+				opacity: 65%;
+				}
+
+			.mid {
+				display: block;
+				margin: 0;
+				width: 100%;
+				opacity: 85%;
+				}
+
+				.mid2 {
+					display: block;
+					margin-left: 0;
+					margin-right: 0;
+					width: 100%;
+					opacity: 55%;
+					}
+
+		.end {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 35%;
+				}
+
+				h1 {
+							font-family: Georgia;
+							color: #8b0000;
+							margin: 20px;
+							font-size:40px;
+							font-weight: normal;
+						}
+
+				h2 {
+							font-family: Verdana;
+							color: #8b0000;
+							margin: 20px;
+							font-size: 30px;
+							font-weight: normal;
+								}
+
+				p {
+					font-family: Verdana;
+					color: #2b2b2b;
+					margin: 20px;
+					font-size: 18px;
+				}
+
+		.topnav {
+			background-color: #f2f2f2;
+			overflow: hidden;
+			border-radius: 0px;
+			margin-bottom: 15px;
+			text-align: center;
+			justify-content: center;
+		}
+
+		.leftnav a {
+			color: #bfbdbd;
+			text-align: center;
+			display: inline-block;
+			justify-content: center;
+			padding: 15px 25px;
+			margin: 0;
+			text-decoration: none;
+			font-size: 18px;
+			font-family: Verdana;
+		}
+
+		.leftnav a:hover {
+			color: #E2E2E2;
+		}
+
+		.active {
+			color: #8b0000;
+
+		}
+
+
+		.brightad {
+			display: inline-block;
+			margin-top: 10px;
+			margin-right: 0px;
+			width: 30%;
+			padding-left: 3.33%;
+		}
+
+			body,html {
+				margin:0;
+				padding:0;
+			}
+			body{
+							background-color:white;
+					}
+
+
+
+		</style>
+	</head>
+	<body style="background-color: #f2f2f2">
+		<div id="wrapper">
+		<a href="../index.html">
+    <image src="../images/musketacts.png" class = center></div>​​​​​​​​​​
+		</a>
+			<nav class = "topnav"/>
+				<div class="leftnav">
+					<a href="../index.html">Home</a>
+					<a href="../tmap.html">Time Map</a>
+					<a href="../qmap.html">Queryable Map</a>
+					<a href="../Source/source.html">Network Analysis</a>
+					<a href="../aigen.html">aiRiot</a>
+					<a href="../pe/pe.html">People and Events</a>
+					<a class = "active" href="stories.html">Stories</a>
+					<a href="../about/about.html">About</a>
+				</div>
+			</nav>
+
+			<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in;
+			word-wrap:break-word'>
+
+			<div class=WordSection1>
+
+			<h1><i>Rereading the Riot Acts: Race, Labor, and the Washington, D.C. Snow Riot of 1835</i></h1>
+			<h2>By Patrick Hoehne</h2>
+
+			<image src="../images/memorial.png" class = center></div>​​​​​​​​​​
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>The voice of the
+				sentry rang out in the darkness. From his station on the wall of the Washington
+				D.C. Navy Yard, the man had spied the approaching danger. His report reached
+				the commandant, and the drums of <body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in;
+				word-wrap:break-word'>the Navy Yard began to beat a panicked tattoo.
+				“<span class=SpellE>Evry</span> man,” recalled Michael Shiner, who was at that
+				time an enslaved Ordinary Seaman at the Yard, “were at his post from the Roll
+				of the drum.”<a style='mso-footnote-id:ftn1' href="#_ftn1" name="_ftnref1"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></a> All
+				hands prepared to mount a defense of the Yard, and the snarling mouths of two
+				twelve-pound canons loaded with grape and canister protruded from the gate.
+				Outside of the walls, in the city’s Sixth Ward, a large and hostile mob roared.
+				It was Wednesday night, the twelfth of <span class=GramE>August,</span> 1835. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Two weeks had
+				passed since white workers at the Navy Yard had gone on strike, protesting hard
+				hours and poor treatment. Tensions burned in the August heat, and the strike
+				soon morphed into a violent riot. Although they continued to threaten the
+				officers of the Navy Yard, abolitionists, and the legal infrastructure of
+				Washington, rioters directed the majority of their violence against the city’s African
+				American population. The mob’s targeting of <span class=GramE>one man</span>,
+				former slave and restaurant-owner Beverly Snow, led to the whole of the unrest
+				being remembered as the Snow Riot. As Michael Shiner listened to the bellows of
+				the angry crowd gathered beyond the walls of the Navy Yard, he was undoubtedly
+				aware of the personal danger he faced. Still, he manned his post, and if he
+				felt any fear, he did not record it. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>The rioter attack
+				on the Navy Yard never did materialize. Shiner hypothesized that “those fellows
+				Jest done it for to <span class=SpellE>tantilise</span> <span class=SpellE>comanodore</span>
+				hull they <span class=SpellE>hadent</span> no notion of <span class=SpellE>comint</span>
+				to the yard.”<a style='mso-footnote-id:ftn2' href="#_ftn2" name="_ftnref2"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a> For the
+				rioters, Shiner reckoned, a show of force had been sufficient. “Thank god,” he
+				concluded, “<span class=SpellE><span class=GramE>every thing</span></span> <span
+				class=SpellE>wher</span> settled <span class=SpellE>peaceblelly</span>.”<a
+				style='mso-footnote-id:ftn3' href="#_ftn3" name="_ftnref3" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[3]</span></span><![endif]></span></span></a> There
+				was no need for Shiner to mention that the African Americans who watched their
+				homes, churches, businesses, and schools engulfed in flames were not so lucky.
+				The ashes were testament enough. Still, no corpses littered the streets of the
+				capital, and, at the orders of President Andrew Jackson, U.S. marines restored
+				order to the city.</p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>It is perhaps the
+				absence of this blood-and-thunder that has contributed to the diminished
+				significance of the Snow Riot in the historiography of American rioting. As a
+				race riot, the Snow Riot is overshadowed by the contemporaneous unrest in
+				Cincinnati, New York City, and Philadelphia. Other than having the distinction
+				of occurring in the nation’s capital, the prevailing scholarship generally
+				paints the Snow Riot as just one of the hundreds of occurrences of extralegal
+				group violence that erupted in the turbulent 1830s.<a style='mso-footnote-id:
+				ftn4' href="#_ftn4" name="_ftnref4" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[4]</span></span><![endif]></span></span></a>
+				When the Snow Riot is remembered, analyses tend to be shallow and riddled with
+				errors. While one historian mistook the entire affair for an episode of
+				interracial working-class solidarity, most scholarship is content to present
+				the Snow Riot as either identical to anti-abolitionist unrest in the urban
+				North, or as an example of non-elite, non-slaveholding Southerners eagerly
+				employing violence for the benefit of the institution of slavery.<a
+				style='mso-footnote-id:ftn5' href="#_ftn5" name="_ftnref5" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[5]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>These
+				interpretations are wrong. The Snow Riot possesses a significance largely
+				unexplored by historians, and its mischaracterization has consequently
+				distorted the prevailing theories regarding American popular extralegal
+				violence. Unlike the race riots in Philadelphia or New York City, the
+				Washington riot occurred in a slave city. The specter of slavery permeated the
+				legal, social, and economic structures of the urban environment. It engendered
+				a system where hierarchy, status, and categorization were both more important
+				and more precarious than in Northern free cities. It cultivated an unstable
+				ideology of violence defined by hierarchy and masculine control of others.
+				Perhaps most importantly, slavery’s inescapable presence shaped daily life for
+				every last one of the city’s residents. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>In the Washington
+				Navy Yard, slavery was unavoidable by design. Capitalism intertwined with
+				slavery to create a wage labor market especially vulnerable to exploitation and
+				control.<a style='mso-footnote-id:ftn6' href="#_ftn6" name="_ftnref6" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[6]</span></span><![endif]></span></span></a>
+				Officers deliberately deployed unfree labor and exacerbated racial divisions in
+				order to control free workers and undercut demands for better pay or
+				conditions. For white workers, this labor competition collided with the racial
+				and social hierarchies of the slaveholding South, and economic insecurity
+				mingled with status insecurity to create a volatile mix. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>The white workers
+				of the Washington Navy Yard hated black people and abolitionists. From the
+				violence of the Snow Riot, this much is immediately clear. What is less
+				apparent is the fact that those white workers were also opponents of slavery.
+				For men who rioted in the August of 1835, these stances were not contradictory.
+				The Snow Riot of 1835, rather than being conducted in defense of slaveholding
+				Southern society, was the complex expression of the frustrations and objectives
+				of white Navy Yard workers. Violence, in a city defined by Southern
+				slaveholding, presented workers with the only means to simultaneously counter
+				exploitation, assert their status, reorient the legal system in their favor, and
+				crush their economic competition. The spark for this violence did not come from
+				any abolitionist, rebellious slave, or restaurant owner, but rather stemmed
+				directly from the marriage of urban slavery and wage labor capitalism.<span
+				style='mso-spacerun:yes'>  </span></p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>In order to read
+				the Snow Riot, the violence itself must be analyzed. Many riots, rather than
+				acts of mindless destruction, are a form of violent communication. Unless
+				extremely narrow in scope or veering into the realm of outright rebellion, most
+				acts of extralegal group violence lack the power to completely achieve their
+				objectives through the application of blunt force alone. Instead, most riots
+				rely on a public and <span class=GramE>highly-symbolic</span> language of
+				occupation, destruction, and violence in order to communicate their demands.
+				Ritualistically defaced property or mutilated bodies are more than the
+				unfortunate receptacles of a crowd’s rage, they serve as the canvas upon which
+				the mob can inscribe threats, grievances, and demands. The subsequent response
+				of authorities and targets to this violent communication is often what dictates
+				the overall success of a riot.</p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Understanding the
+				animus of a mob is, in part, understanding the individual’s perceived
+				relationship to violence and the law. This relationship is shaped by power,
+				conditions, and socio-economic realities, but is also directly informed by a
+				cultural understanding of the individual’s position relative to society and
+				government. Constantly changing external and internal forces ensure that this
+				cultural understanding evolves over time. The “mob mentality” that animates a
+				riot does not lurch around with bestial <span class=GramE>indirection, but</span>
+				is rather a historical and cultural calculus shaped to address whatever forces
+				or pressures supposedly necessitated the application of violence and
+				circumvention of the law. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Deciphering this
+				calculus means, in part, analyzing the Snow Riot in the context of broader
+				trends occurring across the United States. The white mechanics’ deployment of
+				extralegal violence as a tool of coercion and communication bore similarities
+				to strategies employed by workers throughout the republic when confronted with
+				exploitation or labor competition. Still, national trends do not fully explain
+				the seething tension that possessed Washington in the summer of 1835. The local
+				realities of Washington were unlike those in Boston, Philadelphia, or New York
+				City, and not simply because of the city’s status as the national capital. Washington
+				D.C. was a city of hierarchy, and deliberately cultivated an environment of
+				spatial, racial, and social inequality that culminated, explosively, with the
+				Snow Riot. </p>
+
+				<image width = 50% align = right src="../images/memorial2.png">
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>In 1835,
+				Washington was still younger than some of its residents, having been founded in
+				1790. The man at that time occupying the White House, by comparison, had been
+				born twenty-three years before Congress even designated the site as the future
+				national capital. Still, Washington expanded rapidly, and by 1830 almost 19,000
+				residents called the city home.<a style='mso-footnote-id:ftn7' href="#_ftn7"
+				name="_ftnref7" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[7]</span></span><![endif]></span></span></a> The
+				residential patterns of Washington were not random, but reflected some of the
+				structures baked into the city as a constructed space.<a style='mso-footnote-id:
+				ftn8' href="#_ftn8" name="_ftnref8" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[8]</span></span><![endif]></span></span></a> <span
+				style='mso-spacerun:yes'> </span>Most of the city’s residents lived along an
+				artery of power that stretched from the White House to the Capitol. This
+				section of the Pennsylvania Avenue constituted the heart of the city, and,
+				consequently, the heart of the nation. Pennsylvania Avenue became an important
+				stage for the symbolic representation of national power, authority, and prosperity.<a
+				style='mso-footnote-id:ftn9' href="#_ftn9" name="_ftnref9" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[9]</span></span><![endif]></span></span></a> The
+				federal government began to play a direct role in developing the national
+				capital as the symbolic seat of American power and prestige. Impressive
+				government offices, churches, banks, and hotels lined Pennsylvania Avenue, and
+				elite Washingtonians settled nearby, both for convenience as well as public
+				visibility. </p>
+
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Other institutions
+				too were imbued with a symbolic visibility in the young capital. Alongside all
+				those elegant buildings stood a string of taverns, markets, and slave pens where
+				human lives were bought and sold alongside livestock. These pens were not
+				hidden from the public view as embarrassing to the image of the emerging
+				capital, but operated along Pennsylvania Avenue at some of the city’s busiest
+				intersections, in plain view of the White House.<a style='mso-footnote-id:ftn10'
+				href="#_ftn10" name="_ftnref10" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[10]</span></span><![endif]></span></span></a>
+				Those slave pens were not simply positioned for the sake of convenience, but
+				were a symbolic representation of the political objectives of the slaveholding
+				elite, both of the city and the nation. As historian Adam Costanzo writes,
+				“defenders of the slave system also saw the capital as a proxy for the nation.
+				During a long rebuttal to [William] Slade, Virginia Jacksonian James Garland
+				encouraged Congress to protect the liberty and property of slaveholders in the
+				District.”<a style='mso-footnote-id:ftn11' href="#_ftn11" name="_ftnref11"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[11]</span></span><![endif]></span></span></a> The
+				visible presence of slavery in the national capital was an important symbolic
+				justification to counter abolitionist attacks on the expansion of slavery in
+				the territories. For Washington’s own elite slaveholders, the arrangement of
+				Pennsylvania Avenue affirmed their status at the top of the city’s racial and
+				social hierarchies, and allowed ample opportunities for the cultivation of
+				wealth, prestige, and control.</p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Washington’s space
+				was intentionally used to affirm and enforce inequalities and hierarchies, both
+				at a national and local level, but Pennsylvania Avenue still offered opportunities
+				for non-elite Washingtonians. Proximity to the main artery of the capital could
+				grant even marginal free residents the ability to find a measure of success.
+				Smaller merchants, proprietors, and skilled and unskilled laborers lived and
+				operated in the neighborhoods surrounding Pennsylvania Avenue, hitching their
+				own prospects to traffic and expansion of the capital. Although lacking in
+				substantial wealth or political power, some of these Washingtonians managed to
+				quietly challenge the racial and social hierarchies that were supposed to
+				define the city’s society. On the corner of Pennsylvania Avenue and Sixth
+				Street, Beverly Snow, a mixed-race man, opened and operated a successful
+				restaurant, the Epicurean Eating House. This symbol of black independence and
+				entrepreneurial success stood just minutes from both the Capitol and Pennsylvania
+				Avenue’s slave pens. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Still, not all of
+				the city’s residents lived and worked in the area surrounding Pennsylvania
+				Avenue, and a significant, largely working-class population inhabited the
+				city’s peripheries. The corridor between the White House and the Capitol ran
+				through four of Washington’s six wards, leaving two, the fifth and sixth wards,
+				largely disconnected from the main channels of investment, power, and opportunity.
+				As far back as 1804, Thomas Law wrote that “the public buildings, being placed
+				at a distance from each other, created a division among the inhabitants; and
+				the question has always been agitated, which end of the city would
+				preponderate?”<a style='mso-footnote-id:ftn12' href="#_ftn12" name="_ftnref12"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[12]</span></span><![endif]></span></span></a> In an
+				attempt to remedy this issue, the city constructed the Washington Canal, which
+				was intended to serve as an additional avenue of commerce and transportation. The
+				canal flowed from Eastern Branch up through the Fifth and Sixth wards,
+				proceeding north near Pennsylvania Avenue and ending in the Potomac River just
+				south of the White House. This path, Law argued, would help alleviate the
+				spatial imbalances of the growing city. “Unless this canal is formed,” he
+				argued, “Pennsylvania avenue and other central streets will only promote the
+				extremities of the city by having all their supplies from thence; but as soon
+				as it is effect, the boarding houses, the houses of the public officers, the
+				houses of ambassadors, the stores…and all will combine to create business and
+				population.”<a style='mso-footnote-id:ftn13' href="#_ftn13" name="_ftnref13"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[13]</span></span><![endif]></span></span></a></p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Law’s reasoning
+				was well-founded, but the canal itself was an utter failure. Waste, debris, and
+				sewage clogged the waterway, making navigation difficult. Dredging this filth
+				was expensive, and not done with enough regularity. The city did attempt to
+				install a mud machine, possibly modeled after the one used in Baltimore harbor,
+				but keeping the machine repaired and operational also proved difficult.<a
+				style='mso-footnote-id:ftn14' href="#_ftn14" name="_ftnref14" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[14]</span></span><![endif]></span></span></a> The
+				canal, which was supposed to serve as a conduit of growth and prosperity,
+				became a repugnant eyesore and public nuisance, with drunks and children
+				needing to be occasionally rescued from its filthy waters.<a style='mso-footnote-id:
+				ftn15' href="#_ftn15" name="_ftnref15" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[15]</span></span><![endif]></span></span></a> Needless
+				to say, the homes of ambassadors, officials, and elite Washingtonians remained
+				firmly planted on Pennsylvania Avenue. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Despite the
+				failure of the Washington Canal, the southeastern wards were neither uninhabited
+				<span class=GramE>or</span> lifeless. In the Sixth ward, the presence of the
+				Washington Navy Yard, the city’s largest employer, facilitated the growth of its
+				own residential neighborhood. Disconnected from the main artery of public life,
+				the neighborhood was distinct in several ways. The Sixth ward was, by far, the
+				whitest ward in Washington, and black residents constituted only 14% of the
+				ward’s population in 1830. Every other ward in the city was at least a quarter
+				black at that time, and, in the Fourth ward, 39% of the population was African
+				American. The Sixth ward was also unique insofar that it had the second lowest
+				estimated total property value in the entire city. Per capita, it had the
+				lowest.<a style='mso-footnote-id:ftn16' href="#_ftn16" name="_ftnref16" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[16]</span></span><![endif]></span></span></a> Instead
+				of banks, government departments, and hotels, the Sixth ward was home to a
+				handful of taverns, poorer churches, and military buildings.<a
+				style='mso-footnote-id:ftn17' href="#_ftn17" name="_ftnref17" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[17]</span></span><![endif]></span></span></a> A
+				unique social scene also developed, and, in addition to the church
+				congregations, workers at the Navy Yard organized their own temperance
+				organization and Masonic hall, independent the Masons located near Pennsylvania
+				Avenue.<i><span style='font-family:"Garamond",serif;color:#211E1E'> </span></i></p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>The Washington
+				Navy Yard, founded in 1799 and originally oriented towards building and
+				maintaining ships for the U.S. Navy, had by 1827 transitioned into a manufacturing
+				center.<a style='mso-footnote-id:ftn18' href="#_ftn18" name="_ftnref18" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[18]</span></span><![endif]></span></span></a> A
+				formidable wall encircled the Yard, and entrance could only be admitted with
+				the permission of the Commandant. Inside the fortifications, a series of large
+				brick buildings served as shops, with the Yard being home to upwards of twenty
+				forges, five furnaces, and a steam engine.<a style='mso-footnote-id:ftn19'
+				href="#_ftn19" name="_ftnref19" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[19]</span></span><![endif]></span></span></a>
+				The furnaces belched out soot and radiated heat, blackening the skin of the
+				workers and creating dangerously high temperatures, especially in the summer
+				months when the Yard was most busy. The risk of fire was ever present in such
+				conditions, and the roofs of the buildings were covered in copper to help
+				mitigate the danger of conflagration. A constant cacophony of hammers, saws,
+				axes, engines, and bellows pounded the eardrums, while the smells of sweat,
+				burning coal, and industrial substances hung in the nose.<a style='mso-footnote-id:
+				ftn20' href="#_ftn20" name="_ftnref20" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[20]</span></span><![endif]></span></span></a> Outside
+				of the shops, other men worked on ships: carpentering, painting, caulking, and
+				hauling heavy material needed for construction and maintenance. Hundreds of
+				cannons dotted the Yard, and a <span class=GramE>carefully-secured</span>
+				armory contained an additional collection of weaponry. This was dangerous work,
+				and inexperience or distraction could be a death sentence. Michael Shiner recorded
+				that, in 1833, a German immigrant “green hand” named Slake made the mistake of
+				using his head to shove some driving piles. “His head <span class=SpellE>wher</span>
+				caught in between the plains and pile,” Shiner wrote, “and his head <span
+				class=SpellE>wher</span> <span class=SpellE>takein</span> right <span
+				class=SpellE>oft</span> his shoulders.”<a style='mso-footnote-id:ftn21'
+				href="#_ftn21" name="_ftnref21" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[21]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>This tense and hazardous
+				environment was accompanied by a strict command structure. The highest
+				authority in the Navy Yard was the Commandant, a career naval officer. Below
+				the Commandant were the officers and civilian clerks, who assisted in the daily
+				operation of the Yard. These men enjoyed the stability of salaried pay, and were
+				often charged with handling budget, contracting, and administration.<a
+				style='mso-footnote-id:ftn22' href="#_ftn22" name="_ftnref22" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[22]</span></span><![endif]></span></span></a> For
+				most workers, the most present form of the Yard’s organizational hierarchy came
+				in the form of the master mechanics, who John Sharp characterized as
+				personifying “authority, trade knowledge, and tradition.” Master mechanics were
+				seasoned workers recognized as experts in their craft, and “provided the
+				day-to-day leadership for their workers.”<a style='mso-footnote-id:ftn23'
+				href="#_ftn23" name="_ftnref23" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[23]</span></span><![endif]></span></span></a> Under
+				the master mechanics was a further pyramid of supervisors, journeymen,
+				apprentices, and unskilled laborers. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>In 1835, the
+				Commandant was Isaac Hull, a national hero following the War of 1812. Hull had
+				commanded the fabled USS <i>Constitution</i>, and had won fame for his leadership
+				in the sinking of the frigate HMS <span class=SpellE><i>Guerriere</i></span>
+				off the coast of Nova Scotia<i>. </i>As Commandant of the Navy Yard, however,
+				Hull found himself deeply unpopular among the workers. Hull treated the
+				mechanics and other civilian workers with suspicion, believing them lazy, untrustworthy,
+				and inclined to steal both time and government property. In 1833, the
+				Commandant complained that “all the driving and encouragement is thrown away on
+				the mechanics of this place, for if they are at work by the day on a building
+				that there is the least chance of keeping through the whole season they will be
+				sure to do so though it might be completed by mid-summer.”<a style='mso-footnote-id:
+				ftn24' href="#_ftn24" name="_ftnref24" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[24]</span></span><![endif]></span></span></a>
+				Hull also moved to challenge the Yard’s master mechanics, removing both Master
+				Mechanic Benjamin King and Master Machinist John Judge. These leadership
+				methods did little to endear Hull to some of the remaining master mechanics,
+				and Yard leaders like Naval Constructor William Doughty developed an
+				acrimonious relationship with the Commandant.<a style='mso-footnote-id:ftn25'
+				href="#_ftn25" name="_ftnref25" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[25]</span></span><![endif]></span></span></a> Hull’s
+				authoritarian demeanor was compounded by the stringent and <span class=GramE>unequally-enforced</span>
+				rules of the Yard. Smoking, for example, was forbidden in the fire-vulnerable
+				Yard, but exceptions were made for the quarters of Commissioned Officers.<a
+				style='mso-footnote-id:ftn26' href="#_ftn26" name="_ftnref26" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[26]</span></span><![endif]></span></span></a></p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Hull was also
+				disliked by many low-ranking white mechanics for his continued defense of enslaved
+				and free black labor in the Navy Yard. Despite the largely working-class white
+				environment of the Sixth ward, the African American presence at the Navy Yard
+				was unavoidable, especially in the blacksmith shop, where eight black men – two
+				free, six enslaved – worked as strikers. Others, like Michael Shiner, labored
+				as ordinary seamen, and George Carnes worked on the steam engine.<a
+				style='mso-footnote-id:ftn27' href="#_ftn27" name="_ftnref27" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[27]</span></span><![endif]></span></span></a> In
+				1830, only three of the sixteen black workers listed on the payroll by Isaac
+				Hull were counted as free. The rest of the African American workers were
+				enslaved, mostly by none other the officers and high-ranking civilians of the
+				Yard itself. The Master Plumber of the Yard, the Store Keeper, the Master
+				Smith, the First Lieutenant, the Clerk, the Purser, and the Inspector of Timber
+				were all listed as holding Yard workers in bondage in Hull’s 1830 report.<a
+				style='mso-footnote-id:ftn28' href="#_ftn28" name="_ftnref28" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[28]</span></span><![endif]></span></span></a> In
+				a flagrant conflict of interest, these men used their positions in the Yard to
+				profit not only from their own salaries, but from the per diem wage “paid” to
+				their bondsmen. Official Navy policy forbade such arrangements, issuing an 1817
+				circular directing that “no Slaves or Negroes, except under extraordinary
+				Circumstances, shall be employed in any navy yard in the United States.”<a
+				style='mso-footnote-id:ftn29' href="#_ftn29" name="_ftnref29" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[29]</span></span><![endif]></span></span></a> Although
+				the total number of African Americans in the Yard did decline, the officer and
+				civilian slaveholders of the Washington Navy Yard lobbied furiously to shield
+				their deployment of enslaved labor. Hull continued this defense, and when
+				pressed on the continued employment of black workers, replied that “I consider
+				them the hardest working men in the yard and as they understand their work they
+				can do much more work in a day than new hands could and I could suppose it
+				would require many weeks if not months to get a gang of hands for the Anchor
+				shop to do the work that is now done.”<a style='mso-footnote-id:ftn30'
+				href="#_ftn30" name="_ftnref30" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[30]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>The Navy Yard’s
+				black workers were not passive participants in this system. Even as Hull
+				defended their continued presence, black workers, both free and enslaved,
+				transformed the slaveholding, exploitative Yard into a hotspot of resistance.
+				Partially, this was made possible through the human networks facilitated by
+				working in the Yard. Black workers interacted and forged potentially valuable
+				relationships with each other, as well as with white officers, clerks, and
+				foremen.<a style='mso-footnote-id:ftn31' href="#_ftn31" name="_ftnref31"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[31]</span></span><![endif]></span></span></a> Between
+				black workers, networks enabled the potential transmission of legal knowledge
+				and strategies for effectively challenging slavery. Formerly enslaved, the
+				long-serving blacksmith Joe Thompson had filed a freedom suit and ended his
+				bondage in 1817. In 1833, Phillis Shiner, the wife of the Navy Yard’s Michael
+				Shiner, filed a similar freedom suit in order to prevent her and her children
+				from being subject to a rapid sale south. Shiner quickly secured the legal
+				counsel of Francis Scott Key, who had served as one of the attorneys for Joe
+				Thompson in his freedom suit. These legal maneuvers gave Michael Shiner time to
+				marshal allies and secure the release of Phillis and the children.<a
+				style='mso-footnote-id:ftn32' href="#_ftn32" name="_ftnref32" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[32]</span></span><![endif]></span></span></a>
+				In 1835, shortly after the Snow Riot, slavers assaulted and seized Daniel Bell
+				in the Navy Yard itself. Bell, who worked as a blacksmith alongside Thompson, also
+				filed a freedom suit to block an expedited sale.<a style='mso-footnote-id:ftn33'
+				href="#_ftn33" name="_ftnref33" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[33]</span></span><![endif]></span></span></a>
+				The successful use of similar strategies by enslaved Navy Yard workers
+				indicates that the Yard provided a unique space in which approaches to
+				resistance could be cultivated, shared, and refined. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Even as
+				relationships between African American workers facilitated the flow of
+				information, relationships between blacks and whites in the Yard allowed for
+				the cultivation of valuable alliances and personal connections. When Michael
+				Shiner scrambled to rescue his wife and children from sale in 1833, he utilized
+				his most influential Navy Yard connections. The charismatic Shiner found
+				supporters among the clerks, high-ranking officers, and even Commandant Hull
+				himself.<a style='mso-footnote-id:ftn34' href="#_ftn34" name="_ftnref34"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[34]</span></span><![endif]></span></span></a> These
+				men intervened on Shiner’s <span class=GramE>behalf, and</span> helped secure
+				freedom for Phillis and the children. “All
+				those above name gentleman,” wrote Shiner in his diary, “all of them <span
+				class=SpellE>wher</span> <span class=SpellE>wiling</span> to help me out my <span
+				class=SpellE>my</span> <span class=SpellE>disstresses</span> in a honest up
+				right way”<a style='mso-footnote-id:ftn35' href="#_ftn35" name="_ftnref35"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[35]</span></span><![endif]></span></span></a> In a
+				hierarchical slave city like Washington, the involvement of such influential
+				white men was invaluable, and the forging of this powerful network of allies
+				was only possible through Shiner’s work in the Navy Yard. While legally and
+				economically limited on account of their enslavement, Navy Yard workers like
+				Shiner were able to deploy these relationships to disrupt the machinery of
+				slavery at critical moments, buying time, securing freedom, and mounting
+				stunningly effective resistance. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Though they had
+				earned Shiner’s gratitude, the intentions of the Navy Yard’s leadership were
+				not entirely benevolent. Listed among the men who helped Shiner was <span
+				class=GramE>Store Keeper</span> Cary Seldon, himself a slaveholder. An 1830 report
+				notes that Moses Dyson, held in slavery by Seldon, worked in the blacksmith
+				shop.<a style='mso-footnote-id:ftn36' href="#_ftn36" name="_ftnref36" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[36]</span></span><![endif]></span></span></a> For
+				the leadership of the Navy Yard, black labor provided more than just personal
+				financial benefit. As Seth Rockman argues, urban slavery was not incompatible
+				with the <span class=GramE>free-labor</span> economy, but was incorporated in
+				such a way as to give employers a distinct advantage in managing their
+				workforces. “The simultaneous sale of laborers’ time and laborers’ bodies,”
+				Rockman writes, “brought employers the power to choose whom to buy, hire, rent,
+				or recapture in order to find exactly the worker they sought at any given
+				moment.”<a style='mso-footnote-id:ftn37' href="#_ftn37" name="_ftnref37"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[37]</span></span><![endif]></span></span></a> The
+				assimilation of enslaved labor into a wage-labor system helped contribute to a
+				large, disposable, and diverse labor pool, which helped counter the
+				effectiveness of worker resistance and organization. Washington employers
+				understood this reality. In a 1793 letter to Thomas Jefferson concerning labor
+				in Washington, a group of commissioners noted that “we are under a necessity,
+				of doing otherwise as to the <span class=SpellE>labourers</span>, a part of
+				whom we can easily make up of Negroes and find it proper to do so. Those we
+				have employed this Sumer have proved a very useful check &amp; kept our Affairs
+				Cool.”<a style='mso-footnote-id:ftn38' href="#_ftn38" name="_ftnref38" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[38]</span></span><![endif]></span></span></a> The
+				strategy of keeping worker demands “cool” through the use of slave labor
+				resulted in wages that differed dramatically from those in non-slaveholding
+				yards. In the free Charlestown Navy Yard, historian Linda Maloney notes that
+				workers earned an average of $1.00 per diem. In slaveholding Washington, white
+				and black workers earned an average of just $0.72.<a style='mso-footnote-id:
+				ftn39' href="#_ftn39" name="_ftnref39" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[39]</span></span><![endif]></span></span></a> “Generally,”
+				remarked Anne Newport Royall after an 1826 visit to the Washington navy Yard,
+				“wages are very low for all manner of work.”<a style='mso-footnote-id:ftn40'
+				href="#_ftn40" name="_ftnref40" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[40]</span></span><![endif]></span></span></a> Low
+				wages were compounded by a yearly labor cycle that saw many men laid off for
+				the unproductive winter months.<a style='mso-footnote-id:ftn41' href="#_ftn41"
+				name="_ftnref41" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[41]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>The presence of
+				enslaved and free black labor threatened not only the economic position of
+				white workers, but their social position as well. Washingtonian society, like
+				the rest of the slaveholding South, was predicated on the concept of white
+				racial supremacy. In many parts of the republic, this supremacy was justified
+				daily through racial divisions in labor. As Rockman correctly notes,
+				“hierarchies of labor and hierarchies of race were mutually reinforcing: what
+				made African Americans inferior was that they performed the worst jobs, and
+				what made those jobs the worst<span style='mso-spacerun:yes'>  </span>was that
+				African Americans performed them.”<a style='mso-footnote-id:ftn42'
+				href="#_ftn42" name="_ftnref42" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[42]</span></span><![endif]></span></span></a> Working
+				alongside African-American workers for the same amount of pay exposed the parity
+				of white and black Navy Yard workers, and consequently sullied the position of
+				the mechanics in Washington’s social hierarchy. Condemning the use of slave
+				labor on Washington’s Navy Yard and other public works, one resident wrote that
+				“the employ of slaves prevents white men from accepting work amongst them as the
+				whites feel it to be a degradation…many came to the city of Washington with
+				their wives, sons, and daughters, but they returned disgusted, as they would
+				not associate with negro slaves.”<a style='mso-footnote-id:ftn43' href="#_ftn43"
+				name="_ftnref43" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[43]</span></span><![endif]></span></span></a>
+				This proximity threatened white Yard workers with social dismissal to a status
+				equivalent to “white trash,” a term that first appeared in print in 1821.<a
+				style='mso-footnote-id:ftn44' href="#_ftn44" name="_ftnref44" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[44]</span></span><![endif]></span></span></a> One
+				1833 essay from Lynchburg, Virginia, lumped together “free negroes and
+				worthless, dissipated whites, who have no visible means of support, and who are
+				rarely seen at work.”<a style='mso-footnote-id:ftn45' href="#_ftn45"
+				name="_ftnref45" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[45]</span></span><![endif]></span></span></a>
+				Working in the shops of the Navy Yard even compromised the most immediate
+				visible marker of whiteness, the skin, with Royall commenting that “the workmen
+				are as black as negroes.”<a style='mso-footnote-id:ftn46' href="#_ftn46"
+				name="_ftnref46" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[46]</span></span><![endif]></span></span></a></p>
+
+				<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>Many
+				of the Navy Yard’s white workers responded to these tensions by adopting an
+				anti-slavery attitude. In 1828, more than 80 white workers signed a citywide
+				petition to abolish slavery in Washington, including a number of the Yard’s
+				smaller slaveholders.<a style='mso-footnote-id:ftn47' href="#_ftn47"
+				name="_ftnref47" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[47]</span></span><![endif]></span></span></a> It
+				is possible that some men may have signed the petition out of genuine
+				abolitionist feeling, or even affection for their black workmates.<a
+				style='mso-footnote-id:ftn48' href="#_ftn48" name="_ftnref48" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[48]</span></span><![endif]></span></span></a> Others,
+				especially the slaveholders, may have signed to win the goodwill of
+				non-slaveholding workers, or as a way to distance themselves from the moral
+				culpability of trading in human beings. However, most of the Navy Yard workers
+				who affixed their names to the petition did so to counter the power of the
+				city’s slaveholding elites and challenge what they saw as the deleterious
+				marriage of slavery and wage labor. The language of the petition explicitly
+				reflected the anxieties of the Navy Yard’s mechanics regarding the “cooling”
+				effect produced by the marriage of slavery and wage labor. Slavery, the
+				petition stated, “prevents a useful and industrious class of people from
+				settling among us, by rendering the means of subsistence more precarious to the
+				laboring class of whites. It diminishes the resources of the community, by
+				throwing the earnings of the poor into the coffers of the rich.”<a
+				style='mso-footnote-id:ftn49' href="#_ftn49" name="_ftnref49" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[49]</span></span><![endif]></span></span></a> </p>
+
+				<image width = 40% align = left src="../images/payroll2.png">
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>For white Navy
+				Yard workers, signing the petition was unequivocally not the rejection of
+				racism, violence, or white supremacy. James Bury, the foreman blacksmith who
+				signed the 1828 petition, also signed an 1812 petition protesting disciplinary
+				action taken against a blacksmith for assaulting a black worker. Bury and his
+				fellow blacksmiths wrote to the Secretary of the Navy that they were “subjected
+				to the insolence of the negroes employed in the Navy Yard.” Not receiving the
+				same deferential treatment afforded to the slaveholders must have stung white
+				workers conscious of their socially precarious status, but Yard discipline, especially
+				regarding human property, was the domain of the slaveholding class. Working-class
+				white violence against black workers served to not only assert the supremacy of
+				white workers, but also challenged the authority of slaveholders and asserted
+				classless white equality. This defiance of hierarchy received a swift answer,
+				and the offending white blacksmith was “threatened with being discharged for
+				having struck a negro.”<span class=MsoFootnoteReference> </span><span
+				style='mso-spacerun:yes'> </span>Bury and the blacksmiths concluded their
+				petition by stating “some provision ought to be made for the purpose of
+				restraining the misconduct of blacks &amp; of only employing such as are
+				orderly &amp; absolutely necessary.”<a style='mso-footnote-id:ftn50'
+				href="#_ftn50" name="_ftnref50" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[50]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>To Americans like
+				Bury and his fellow white blacksmiths, insecure about the demographic,
+				political, or economic developments in the republic, extralegal violence
+				provided a path to, at least symbolically, reordering society in a way they
+				found equitable. As was the case with Bury’s 1812 incident, historian Paul Gilje
+				notes that racial violence before 1830 “was relatively small scale and involved
+				the destruction of some property and the rough handling of a few individuals.”<a
+				style='mso-footnote-id:ftn51' href="#_ftn51" name="_ftnref51" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[51]</span></span><![endif]></span></span></a> This
+				began to change with the turbulence the early 1830s. Intensified race riots emerged
+				alongside the broader social and labor tensions of the period, especially as
+				anxieties grew regarding access to jobs and wages. The rise of the abolitionist
+				movement, which threatened to unleash even greater economic competition, also
+				encouraged an increasingly brutal strain of racial violence. In 1834 New York City,
+				an attempt to break up an anti-slavery meeting exploded into a several-day-long
+				race riot, in which white New Yorkers torched property associated with African
+				Americans. Similar attacks on urban black neighborhoods erupted in 1829
+				Cincinnati, 1831 Providence, 1834 Philadelphia, and 1836 Cincinnati. Mobs
+				favored symbolic acts of violence in order to communicate an easily discernable
+				message, and churches and black-owned businesses proved popular targets for
+				destruction.<a style='mso-footnote-id:ftn52' href="#_ftn52" name="_ftnref52"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[52]</span></span><![endif]></span></span></a> In the
+				rural South, fears over insurrection, elevated by Nat Turner’s slave rebellion,
+				resulted in extralegal killings in Missouri, Arkansas, and Mississippi.<a
+				style='mso-footnote-id:ftn53' href="#_ftn53" name="_ftnref53" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[53]</span></span><![endif]></span></span></a><span
+				style='mso-spacerun:yes'>   </span></p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>This racial terror
+				combined with labor violence, ethno-religious rivalries, political unrest, and
+				financial turmoil to ensure that the early 1830s saw some of the most intensive
+				rioting in American history. Across the entirety of the United States, a series
+				of violent and destructive riots challenged the stability of the republic, with
+				at least twenty-four major riots in 1834, and an equal if not far greater
+				number the following year.<a style='mso-footnote-id:ftn54' href="#_ftn54"
+				name="_ftnref54" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[54]</span></span><![endif]></span></span></a>
+				In fact, historian David <span class=SpellE>Grimsted</span> claimed that no
+				less than 147 riots burned across the country in 1835.<a style='mso-footnote-id:
+				ftn55' href="#_ftn55" name="_ftnref55" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[55]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>The area
+				surrounding Washington D.C. was no exception to this trend. In January of 1834,
+				just over seventy miles outside of the capital, desperate labor competition
+				drove approximately one thousand Irish canal workers to separate into two gangs
+				and engage in a bloody pitched battle. The ensuing melee left several dead,
+				and, on the orders of President Jackson, two companies of federal troops
+				departed from Fort McHenry on January 30<sup>th</sup> and made their way to the
+				canal to enforce the peace. The arrival of the soldiers marked the first
+				instance of direct intervention by federal forces in a labor dispute, but even
+				military intervention could not stop the outbreak of violence in the region.<a
+				style='mso-footnote-id:ftn56' href="#_ftn56" name="_ftnref56" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[56]</span></span><![endif]></span></span></a>
+				In that same year, Irish laborers on the Baltimore and Washington Railroad
+				rioted in both June and November, with the second outbreak resulting in the
+				deaths of a railroad contractor and a supervisor. The contractor’s firing of a
+				number of Irish workers precipitated the killing.<a style='mso-footnote-id:
+				ftn57' href="#_ftn57" name="_ftnref57" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[57]</span></span><![endif]></span></span></a>
+				Labor disputes were not unique to Irish workers, and in March of 1835, German
+				workers on the same railroad organized a strike for higher wages, and shot
+				several workers who did not join them.<a style='mso-footnote-id:ftn58'
+				href="#_ftn58" name="_ftnref58" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[58]</span></span><![endif]></span></span></a>
+				Turbulent labor disputes were not relegated to unskilled laborers at isolated
+				worksites, and in Washington itself, Duff Green’s attempts to slash labor costs
+				at the <i>United States’ Telegraph</i> resulted in four strikes in less than a
+				year. In March 1835, striking printers, calling themselves “terriers,” compiled
+				a “rat list” of strikebreakers, and spent several nights attacking the “rats”
+				in the capital’s streets.<a style='mso-footnote-id:ftn59' href="#_ftn59"
+				name="_ftnref59" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[59]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>As labor tensions
+				rose in Washington and the surrounding region, reports arrived with news of
+				massive strikes in some of the nation’s largest cities. In the spring and early
+				summer of 1835, workers in Boston and Philadelphia organized large strikes
+				calling for better wages and a ten-hour workday. While modern audiences might
+				understand a strike as safer and more acceptable than a riot, striking carried
+				considerable risks in the early 1830s. Withholding labor meant the cessation of
+				wages, and many large, working-class families lacked savings substantial enough
+				for a protracted labor dispute.<a style='mso-footnote-id:ftn60' href="#_ftn60"
+				name="_ftnref60" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[60]</span></span><![endif]></span></span></a>
+				Additional danger came from the tactics employers used to counter strikes, and
+				laborers considered disposable could easily find themselves replaced by
+				strikebreakers. Common law categorized strikes as illegal conspiracies, and
+				strikers could be subjugated to criminal prosecution or even militia
+				intimidation.<a style='mso-footnote-id:ftn61' href="#_ftn61" name="_ftnref61"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[61]</span></span><![endif]></span></span></a> The
+				contingency of striking and the subsequent employer response also heightened
+				the risk of collective action, and there was never any sure guarantee of
+				success or even post-strike employment. Still, some of these strikes could
+				prove successful, as was the case in Philadelphia, where the nation’s first
+				general strike succeeding in enforcing worker demands.<a style='mso-footnote-id:
+				ftn62' href="#_ftn62" name="_ftnref62" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[62]</span></span><![endif]></span></span></a></p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>In the summer of
+				1835, the Navy Yard’s white mechanics were hateful, but they were not ignorant.
+				The men knew about the riots exploding across the <span class=GramE>country,
+				and</span> had just a few months prior witnessed the Duff Green riot in their
+				own city. They knew, thanks to widely disseminated circulars, about the fight
+				for the ten-hour workday in Boston and Philadelphia. They knew about the
+				expansion of slavery, the rise of abolitionism, and the increasingly prominent
+				debates concerning freedom, race, and the role of law. They knew about the use
+				of slavery in the Yard and the potential threat of free black labor
+				competition. They knew that slaveholders manipulated the wage labor system to
+				their own benefit, and they knew that they occupied a vulnerable social and
+				economic position in relation to those men. These external and internal tensions
+				mixed the with oppressive seasonal heat and the flames of forge and furnace,
+				boiling blood and straining patience. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Strange men moved throughout
+				the Yard that summer, having been brought in to assist in the rebuilding of the
+				frigate <i>Columbia</i>. Their company included a group of free black caulkers
+				from Baltimore. Then, on July 28<span class=GramE><sup>th</sup>, <span
+				style='mso-spacerun:yes'> </span>a</span> white blacksmith, Anthony Sumner, was
+				caught using his lunch basket to sneak compression pins and other government
+				property out of the Yard. Sumner had a large family to support, and the sale of
+				the stolen items was intended to supplement his low wage.<a style='mso-footnote-id:
+				ftn63' href="#_ftn63" name="_ftnref63" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[63]</span></span><![endif]></span></span></a> Hull
+				saw Sumner’s arrest as a validation of his longstanding suspicions regarding
+				the Yard’s <span class=GramE>mechanics, and</span> issued an order that he
+				thought would prevent similar abuses. “The Mechanics &amp; laborers,” the order
+				stated, “are forbidden to bring their meals into the Yard, either in baskets,
+				bags, or otherwise, and none will be permitted to eat their meals within the
+				Yard, unless specially permitted by the Commandant.”<a style='mso-footnote-id:
+				ftn64' href="#_ftn64" name="_ftnref64" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[64]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Outraged white mechanics,
+				insulted by what they saw as a petty and punitive order, called for a cessation
+				of work on July 31<sup>st</sup>. Shiner noted that the white workers brought in
+				to work on the <i>Columbia</i> and “here from different parts of the country”
+				joined the strike.<a style='mso-footnote-id:ftn65' href="#_ftn65"
+				name="_ftnref65" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[65]</span></span><![endif]></span></span></a><span
+				style='mso-spacerun:yes'>  </span>It cannot be said with confidence if these
+				men had been involved in labor resistance or extralegal violence elsewhere
+				before their employment in the capital, but their brief experience in the
+				Washington Navy Yard was enough to galvanize them into action. One of first
+				actions that the striking mechanics took was to target the free black caulkers,
+				with Shiner recording that they “made all of them knock <span class=SpellE>oft</span>.”<a
+				style='mso-footnote-id:ftn66' href="#_ftn66" name="_ftnref66" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[66]</span></span><![endif]></span></span></a> Making
+				matters worse, Hull’s contemptuous relationship with the master mechanics led
+				to traditional Yard leaders like Naval Constructor William Doughty refusing to
+				support the Commandant. Doughty disagreed with the new <span class=GramE>regulations,
+				and</span> fanned the flames by telling the men that the Commandant “must think
+				them all rogues or thieves.”<a style='mso-footnote-id:ftn67' href="#_ftn67"
+				name="_ftnref67" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[67]</span></span><![endif]></span></span></a> From
+				July 31<sup>st</sup> through August 11<sup>th</sup>, the strike proceeded
+				relatively peaceably, but Hull stubbornly refused to offer the mechanics any
+				concessions. By the 11<sup>th</sup>, the duration of the strike had begun to
+				compel some of the men to return to work, and the entire affair seemed
+				consigned to failure.<a style='mso-footnote-id:ftn68' href="#_ftn68"
+				name="_ftnref68" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[68]</span></span><![endif]></span></span></a> That
+				day, however, a development occurred that gave striking diehards a new avenue
+				through which they could enforce their demands. </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>On August 11<sup>th</sup>,
+				two police officers arrested a white abolitionist by the name of Rueben
+				Crandall in Georgetown. Francis Scott Key, the District Attorney, prepared to prosecute
+				Crandall on the charge of promulgating “incendiary” literature throughout the
+				capital.<a style='mso-footnote-id:ftn69' href="#_ftn69" name="_ftnref69"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[69]</span></span><![endif]></span></span></a> A young
+				enslaved man, Arthur Bowen, had been arrested two days prior for drunkenly
+				entering into his mistresses’ room with an axe, and authorities blamed the
+				incident on Northern anti-slavery agitators. City leaders like Key were eager
+				to make an example out of anyone with abolitionist leanings. William Doughty,
+				who himself signed the 1828 abolition petition, encouraged the remaining
+				strikers to tie their effort more directly to issues of race. “Doughty,” writes
+				Maloney, “had told the carpenters that [bringing in free black caulkers]
+				violated the city ordinance forbidding blacks to come to Washington to reside –
+				which was untrue, as the men were brought in only for temporary work.”<a
+				style='mso-footnote-id:ftn70' href="#_ftn70" name="_ftnref70" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[70]</span></span><![endif]></span></span></a>
+				By tying the strike to issues of race, freedom, and abolition, the white mechanics
+				gave themselves license to begin deploying extralegal violence in the pursuit
+				of their demands. While the men would have been executed if they had initially
+				tried to use coercive violence on a war hero like Isaac Hull, free blacks,
+				outlaw slaves, and abolitionists were, in slaveholding Southern society,
+				“acceptable” targets for extralegal mob action. Because free blacks, outlaw
+				slaves, and abolitionists existed on the margins of society, the mechanics
+				could resort to violent tactics without seeming like a radical threat against
+				the traditional societal order. Behind this veneer of conservativism, however,
+				was an implicit, deliberately threatening show of force directed at Isaac Hull
+				and the city’s authorities. The use of “acceptable” targets to communicate a
+				message was a traditional strategy in the history of American extralegal
+				violence. In the 1747 Knowles Riot, for example, rioters burned a ship to
+				protest the impressment of sailors. That ship was owned by none other than one
+				of the riot ringleaders, providing, in Gilje’s words, “a safe and effective
+				means of expressing anti-impressment sentiment.”<a style='mso-footnote-id:ftn71'
+				href="#_ftn71" name="_ftnref71" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[71]</span></span><![endif]></span></span></a></p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>The strikers, now
+				rioters, gathered outside of the city’s jail and demanded that <span
+				class=GramE>authorities</span> hand over Arthur Bowen and Rueben Crandall, so
+				that they might enact their own form of justice. It is not difficult to see how
+				the mechanics would hate abolitionism, even if they supported the end of
+				slavery in Washington itself. Nationwide, many working-class whites feared that
+				abolition would unleash a flood of labor competition as masses of emancipated
+				blacks migrated to urban centers. One newspaper maintained that “In Columbia
+				the white working men came to a resolution not to deal with any man who
+				employed a black man. The reason of all these attacks on blacks is, that they
+				enter into competition for work at a lower rate. They are able to work at a
+				lower rate.”<a style='mso-footnote-id:ftn72' href="#_ftn72" name="_ftnref72"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[72]</span></span><![endif]></span></span></a> However,
+				it is absurd to think that the mechanics forgot all about their animosity
+				towards the city’s elites and Isaac Hull simply because they heard that an
+				abolitionist had been arrested. The words of the rioters themselves
+				demonstrated that their violence was still directed towards challenging Hull
+				and what they saw as an unfair hierarchy. Yard foremen William Ellis and John
+				Cassidy reported that the mechanics at the jail said that they “would hang the
+				man committed that day, commit violence upon Francis S. Key, and that then <span
+				class=SpellE>Commd</span>. Hull might look out.”<a style='mso-footnote-id:ftn73'
+				href="#_ftn73" name="_ftnref73" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[73]</span></span><![endif]></span></span></a> The
+				rioters threatened Key, the city’s pro-slavery attorney, out of anger towards
+				the city’s hierarchies that consolidated legal power in the hands of the elite.
+				When they demanded Bowen and Crandall for themselves, the mechanics were
+				asserting that, as white male citizens, they should be the source of legal
+				power. Because they wrapped their threats in the guise of anti-abolitionist
+				action, the rioters were able to mass and intimidate their white targets
+				without fear of harsh and immediate reprisal.</p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>When it became
+				apparent that Crandall and Bowen would not be released, the mechanics shifted
+				their tactics once again. “They were a rumor flying around,” wrote Shiner,
+				“about a <span class=SpellE>colered</span> man by the name of Snow about <span
+				class=SpellE>a</span> expression he had made about the Mechanics <span
+				class=SpellE>wifes</span> god <span class=SpellE>kowes</span> <span
+				class=SpellE>wether</span> he said those things or not.”<a style='mso-footnote-id:
+				ftn74' href="#_ftn74" name="_ftnref74" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[74]</span></span><![endif]></span></span></a> It
+				did not matter whether Beverly Snow said anything or not. The rioters needed a
+				new avenue to direct their violence and continue their campaign of
+				intimidation, and the rumors gave them the opportunity to justify this fresh
+				violence using the language of Southern patriarchal honor. What man could stop
+				the honest, white working men of Washington from defending the honor of their
+				wives and daughters, against a black man no less?</p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+				style='mso-spacerun:yes'> </span>Snow himself represented everything many of
+				the rioters hated. A free man, Snow ran a successful restaurant on Pennsylvania
+				Avenue where he serviced the “good society” of Washington, and even his light
+				skin, described as “mulatto,” seemed to embody the blurring of social and
+				racial categories that the mechanics so feared. Snow himself managed escape,
+				but, as Shiner recounts, “all the Mechanics of classes gathered into snows
+				Restaurant and broke him up Root and Branch.”<a style='mso-footnote-id:ftn75'
+				href="#_ftn75" name="_ftnref75" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[75]</span></span><![endif]></span></span></a> With
+				this act of destruction, rioter not only erased a symbol of free black
+				advancement and prosperity, they were also able to further communicate their
+				grievances regarding the city’s hierarchies, the role of law, and Hull. Josephine
+				Seaton, daughter of William Winston Seaton of the <i>National Intelligencer</i>,
+				recognized these tensions when she wrote that “all the <i>gentlemen</i> of the
+				city protected Snow so far as they could, not believing him guilt, and even had
+				such been the case they were the friends of law and order, and willing that
+				Snow should be dealt with accordingly, but not by the hands of Judge Lynch.”<a
+				style='mso-footnote-id:ftn76' href="#_ftn76" name="_ftnref76" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[76]</span></span><![endif]></span></span></a> The
+				strike itself was also not forgotten, and, with the city’s elites serving as a
+				captive audience, the destruction of Snow’s restaurant functioned as the
+				proverbial thumb drawn slowly across the neck. “After they had <span
+				class=SpellE>broke</span> snow up,” recalled Shiner, “they threatened to come
+				to the navy yard after commodore Hull.”<a style='mso-footnote-id:ftn77'
+				href="#_ftn77" name="_ftnref77" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[77]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Despite their
+				threats and shows of force, the rioters were not yet prepared to march on the
+				Washington Navy Yard. Attacking a federal instillation was by no means an
+				“acceptable” target, and the men knew they would be liable to be crushed and summarily
+				executed. Instead, the mechanics continued to attack marginal targets while
+				implicitly threatening their less-assailable opponents. The next day, rioters,
+				while hunting for Snow, arrested another free black man, James Hutton, on the
+				pretext of possessing abolitionist newspapers. The mechanics marched Hutton to
+				a magistrate, who eventually managed to get Hutton escorted to jail by some
+				officers.<a style='mso-footnote-id:ftn78' href="#_ftn78" name="_ftnref78"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[78]</span></span><![endif]></span></span></a> The
+				rioters then turned their attention to Snow’s residence, where they broke
+				furniture and drank Snow’s whiskey in another symbolic erasure of black wealth.<a
+				style='mso-footnote-id:ftn79' href="#_ftn79" name="_ftnref79" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[79]</span></span><![endif]></span></span></a> From
+				there, the mob gathered at Centre Market, near the intersection of Pennsylvania
+				and Louisiana Avenues. This central and highly visible location gave the
+				rioters another chance to publicly parade their strength and numbers. Around
+				sundown, about fifty member of the militia mustered to try and keep the peace,
+				but they were vastly outnumbered by the rioters, whose numbers had swelled to
+				somewhere between three and four hundred.<a style='mso-footnote-id:ftn80'
+				href="#_ftn80" name="_ftnref80" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[80]</span></span><![endif]></span></span></a>
+				As this was happening, Hull received orders from the Secretary of the Navy to
+				fortify the Yard against potential assault. It was on this night that Shiner
+				recounted the rioter show of force just outside of the Navy Yard’s gates. Around
+				that time, <i>The Globe</i> reported, the rioters “marched to the west end of
+				the City.”<a style='mso-footnote-id:ftn81' href="#_ftn81" name="_ftnref81"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[81]</span></span><![endif]></span></span></a> The
+				fact that the rioters marched <i>west</i> is critical. The Navy Yard is in the
+				southeastern part of the city. The men who worked at the Yard lived in the
+				surrounding neighborhoods, and if the riot had been solely about targeting
+				black labor competition, rioters would have marched <i>east</i> and attacked
+				the blacks who lived in the Fifth and Sixth wards. The rioters were attacking
+				African Americans who lived around Pennsylvania Avenue for a reason. Not only
+				did these attacks give rioters a chance to assert their racial supremacy and
+				counter black advancement, they gave the mechanics a means through which to
+				publicly and visibly demonstrate force while implicitly threatening and
+				pressuring the city’s elites in their own backyards. There, “they burnt a negro
+				hut, and broke the windows of a negro church, and dispersed in squads of ten
+				and twenties.”<a style='mso-footnote-id:ftn82' href="#_ftn82" name="_ftnref82"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[82]</span></span><![endif]></span></span></a> Other
+				reports suggested the mechanics also destroyed a black schoolhouse and a house
+				of ill-fame.<a style='mso-footnote-id:ftn83' href="#_ftn83" name="_ftnref83"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[83]</span></span><![endif]></span></span></a> This
+				devastation and violence forced many free blacks, including the
+				formerly-enslaved educator John Francis Cook, to flee the city.<a
+				style='mso-footnote-id:ftn84' href="#_ftn84" name="_ftnref84" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[84]</span></span><![endif]></span></span></a> After
+				the rioters had finished their destruction for the evening, the militia
+				impotently “marched towards where the house was burnt, and then marched back
+				again.”<a style='mso-footnote-id:ftn85' href="#_ftn85" name="_ftnref85" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[85]</span></span><![endif]></span></span></a> </p>
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Authorities
+				understood the violent <span class=GramE>messaging, and</span> began to appease
+				rioter demands. Hull, when fortifying the Navy Yard, sent a message to Naval
+				Secretary Dickerson inquiring as to what he should do with the free black
+				caulkers he had brought in from Baltimore. Dickerson advised that the men
+				should not be allowed into the well-defended Yard at night.<a style='mso-footnote-id:
+				ftn86' href="#_ftn86" name="_ftnref86" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[86]</span></span><![endif]></span></span></a> The
+				city government also moved to appease the rioting mechanics, and issued an ordinance
+				targeting nighttime assemblies. This resolution was not aimed at the rioting
+				white mechanics, but rather at “negroes and mulattoes, whether bond or free.”
+				The same resolution went on to promise that the city was also inquiring into
+				preventing black residents from obtaining a liquor license.<a style='mso-footnote-id:
+				ftn87' href="#_ftn87" name="_ftnref87" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[87]</span></span><![endif]></span></span></a> The
+				concessions were meant to reinforce racial divisions between poor blacks and <span
+				class=GramE>whites, and</span> were undoubtedly designed to sooth mechanic
+				anxieties. While Commandant Hull was himself too stubborn to walk back the
+				order that sparked the strike, he agreed to soften the language of the order so
+				as not to offend the sensibilities of the workers.<a style='mso-footnote-id:
+				ftn88' href="#_ftn88" name="_ftnref88" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[88]</span></span><![endif]></span></span></a> A
+				combination of appeasement and a detachment of marines helped ensure that
+				large-scale riot violence effectively ceased. It appeared that the unrest was
+				at an end. “In a couple weeks they had the City of <span class=SpellE>washington</span>
+				as quite as a Church” reported Shiner, “and the laws <span class=SpellE>wher</span>
+				all respected and <span class=SpellE>evrything</span> went on <span
+				class=SpellE>quietely</span>.”<a style='mso-footnote-id:ftn89' href="#_ftn89"
+				name="_ftnref89" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[89]</span></span><![endif]></span></span></a> Two
+				or three men were arrested for their role in the violence, but the rest of the
+				mechanics returned to work in the Navy Yard.<a style='mso-footnote-id:ftn90'
+				href="#_ftn90" name="_ftnref90" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[90]</span></span><![endif]></span></span></a>
+				Within a month, Hull would resign his post. Even Anthony Sumner, the man who
+				first stole the compression pins and sparked the whole affair, received a
+				presidential pardon.<a style='mso-footnote-id:ftn91' href="#_ftn91"
+				name="_ftnref91" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[91]</span></span><![endif]></span></span></a> Although
+				the strike and subsequent violence did not restore lunch privileges, end black
+				labor in the Yard, or usher in the ten-hour workday, the rioting mechanics had
+				successfully used a show of force to, at least symbolically, counter black
+				advancement and assert their status as white men. The pivot away from peaceful
+				striking and towards racial violence and intimidation had been key to this
+				success. <span style='mso-spacerun:yes'> </span></p>
+
+				<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>The
+				Snow Riot had exposed the racial, social, and economic fissures of the capital.
+				Washington’s elites, embarrassed by the affair and uncomfortable with its
+				implications, immediately set to working spinning the entire unrest as solely the
+				fault of abolitionists and free blacks. The <i>Daily National Intelligencer</i>
+				did originally connect the riot to concurrent unrest in Baltimore, and, perhaps
+				sensing the deeper nationwide tensions of the early 1830s, reported that unrest
+				was the result of “inflammation which communicates to other communities.”<a
+				style='mso-footnote-id:ftn92' href="#_ftn92" name="_ftnref92" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[92]</span></span><![endif]></span></span></a>
+				This understanding of the riot was immediately challenged by the <i>United
+				States’ Telegraph</i>, who wrote “The National Intelligencer is very much
+				mistaken…There was not the slightest connection. The excitement here was
+				produced by the distribution of the incendiary pamphlets, connected with the
+				gross insult offered to the wives and daughters of the mechanics of this city.”<a
+				style='mso-footnote-id:ftn93' href="#_ftn93" name="_ftnref93" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[93]</span></span><![endif]></span></span></a>
+				The next day, the <i>Intelligencer</i> published an article blaming the riot on
+				“a demoniacal design, on the part of a fanatical individual to stir up our
+				negro population to insurrection and murder.”<a style='mso-footnote-id:ftn94'
+				href="#_ftn94" name="_ftnref94" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[94]</span></span><![endif]></span></span></a> A
+				revisionist fiction of events soon promulgated, in which the good and honest
+				mechanics were only driven to violence on account of the abolitionist
+				agitators. “We have too good an opinion of the intelligence and sense of the
+				mechanics in Washington,” wrote the <i>Telegraph</i>, “to believe that they
+				can, under any circumstances, be excited to act over in Washington the scenes
+				of some of our Northern cities – to lay waste and destroy the property of their
+				fellow citizens.” That those mechanics had already destroyed the property of
+				the free black community seemed to bother the paper little, who only called on
+				authorities to “prevent the circulation in the District, of those abominable
+				incendiary publications that the Northern Abolitionists have been sending among
+				us.”<a style='mso-footnote-id:ftn95' href="#_ftn95" name="_ftnref95" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[95]</span></span><![endif]></span></span></a> Josephine
+				Seaton too, immediately following her account of the riot, wrote of her
+				father’s “high esteem for the mechanics of Washington, believing that no
+				community possessed a more order-loving, intelligent, self-respecting body of
+				citizens.”<a style='mso-footnote-id:ftn96' href="#_ftn96" name="_ftnref96"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[96]</span></span><![endif]></span></span></a> This
+				seemingly absurd post-riot flattery of the mechanics was a strategy of elite
+				Washingtonians to place the blame for internal tensions on external forces,
+				while simultaneously reestablishing the traditional relationship of elite
+				patronage and plebeian loyalty. The assessment of the Snow Riot as a simple
+				anti-abolitionist riot conducted by loyal pro-slavery peons – an assessment
+				promulgated by slaveholding elites – has persisted in accounts of the unrest
+				ever since.<a style='mso-footnote-id:ftn97' href="#_ftn97" name="_ftnref97"
+				title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[97]</span></span><![endif]></span></span></a> </p>
+
+				<image width = 30% align = right src="../images/returnsnow.png">
+
+				<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>For
+				most of Washington, the Snow Riot ended on the 14<sup>th</sup> and 15<sup>th</sup>
+				of August, when the white mechanics ceased large-scale rioting, ended the
+				strike, and returned to the Navy Yard. For Beverly Snow, the man who gave the
+				unrest its name, the effects of the violence did not end with the cessation of
+				the violence. “Sirs,” Snow wrote in an August 23<sup>rd</sup> letter to the
+				editors of the <i>Daily National Intelligencer</i>, “your paper of the 16<sup>th</sup>
+				and 17<sup>th</sup> contains a supposed charge against me, which has struck
+				death blow to all that I held dear to me in this world, my character and my
+				liberty: for what is life without character? It is nothing: it’s a burden to
+				me.”<a style='mso-footnote-id:ftn98' href="#_ftn98" name="_ftnref98" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[98]</span></span><![endif]></span></span></a> Snow,
+				once a symbol of free black success, now sat in a Fredericksburg jail for his
+				own safety. In his letter to the <i>Daily National Intelligencer</i>, Snow
+				defended his innocence, and pleaded that Washington might learn the truth about
+				the violence. They never did. When Beverly Snow attempted to return to
+				Washington a year later, a group of young men attacked him, and he found
+				himself, once again, in a jail cell. “He was examined before the mayor,”
+				reported one New York paper, “and no offense being laid to his charge, or
+				matter of suspicion appearing against him, he was discharged, and left the
+				city, promising never to return.”<a style='mso-footnote-id:ftn99' href="#_ftn99"
+				name="_ftnref99" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[99]</span></span><![endif]></span></span></a> </p>
+
+
+				<p class=MsoNormal style='text-indent:.5in;line-height:200%'>“If within your
+				own knowledge you can say anything for me in justice,” concluded Snow in his
+				own letter to the editors, “you would oblige your humble servant.”<a
+				style='mso-footnote-id:ftn100' href="#_ftn100" name="_ftnref100" title=""><span
+				class=MsoFootnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[100]</span></span><![endif]></span></span></a>
+				It is too late to help Beverly Snow, but it is not too late to answer this
+				plea. Riots, no matter how seemingly mindless, are not random. Instead, extralegal
+				violence like the Snow Riot is a form of communication. The communicative
+				properties of the Snow Riot, when taken seriously, constitute an unspoken,
+				kinetic manifesto of rioter grievances, demands, and logic. Southern extralegal
+				violence remains only partially <span class=GramE>understood, but</span>
+				adjusting the way in which we interpret violence could open new potential
+				avenues for analysis. Antebellum riots occurred in New Orleans, Baltimore,
+				Columbia, Charleston, and elsewhere throughout the South. As the country
+				lurched towards civil war over the years which followed, these events, like the
+				Snow Riot, may provide a window into the often-overlooked urban realities of
+				pre-war Southern society. When we examine extralegal violence, we must not look
+				solely at the superficial properties of riots, but instead “read the riot
+				acts,” and attempt to analyze more seriously the symbology, language, and
+				context of violence. </p>
+
+				<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal align=center style='text-align:center;line-height:200%'><i>Bibliography<o:p></o:p></i></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Baptist, Edward. <i>The
+				Half Has Never Been Told: Slavery and the Making of American Capitalism.</i>
+				New York City: Basic Books, 2014. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><span
+				class=SpellE>Constanzo</span>, Adam. <i>George Washington’s Washington: Visions
+				for the National Capital in the Early Republic</i>. Athens: University of
+				Georgia Press, 2018. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Delano,
+				Judah.&nbsp;<i>The Washington Directory</i>. Washington: William Duncan,
+				Twelfth Street West, 1822.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Elliot, Jonathan.
+				<i>Historical sketches of the ten miles square forming the District of
+				Columbia: with a picture of Washington, describing objects of general interest
+				or curiosity at the metropolis of the Union</i>. Washington: J. Elliot, Jr.,
+				1830. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Foner, Phillip S. <i>History of the Labor
+				Movement in the United States from Colonial Times to the Founding of the
+				American Federation of Labor</i>. New York: International Publishers, 1979.</span></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><i>General Orders
+				for the Regulation of the Navy Yard Washington, DC.</i> 1833-1850. Naval
+				History and Heritage Command, 2014. https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/g/general-orders-for-the-regulation-of-the-navy-yard-washington-dc-1833-1850.html.
+				</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Gatewood Jr.,
+				Willard B. “John Francis Cook, Antebellum Black Presbyterian.” <i>American
+				Presbyterians</i> 67, no. 3 (1989): 221-229. </p>
+
+				<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Gilje, Paul. <i>Rioting
+				in America</i>. Bloomington: Indiana University Press, 1996. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Gilje, Paul.
+				“Riots in the United States.” Edited by Peter <span class=SpellE>Turchin</span>.
+				<i>Historical Violence Database</i>. The Ohio State University. Oct. 2009.
+				https://cjrc.osu.edu.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Green, William. <i>A
+				Full Directory for Washington City, Georgetown, and <span class=GramE>Alexandria..</span>
+				</i>Washington: E. A. Cohen and Co., 1834.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><span
+				class=SpellE>Grimsted</span>, David. <i>American Mobbing, 1828-1861: Toward
+				Civil</i> <i>War</i>. Oxford: Oxford University Press, 1998. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><span
+				class=SpellE>Grund</span>, Francis. <i>The Americans, In Their Moral, Social,
+				and Political Relations</i>. Boston: Marsh, <span class=SpellE>Capen</span> and
+				Lyon, 1837. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Heine, Cornelius
+				W. “The Washington City Canal.” <i>Records of the Columbia Historical Society,
+				Washington, D.C.</i> 42 (1953, 1956): 1-27. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><i>Historical Statistics of the United States, Earliest Times
+				to the Present: Millennial Edition. </span></i><span>Edited by Susan B. Carter, Scott Sigmund Gartner, Michael R.
+				Haines, Alan L. Olmstead, Richard <span class=SpellE>Sutch</span>, and Gavin
+				Wright. New York: Cambridge University Press, 2006. </span></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Howe, David
+				Walker. <i>What Hath God Wrought: The Transforming of America, 1815-1848</i>.
+				Oxford: Oxford University Press, 2007.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Isenberg, Nancy. <i>White
+				Trash: The 400-Year Untold Story of Class in America</i>. New York City:
+				Penguin Books, 2016. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Kramer, Larry D.
+				“Popular Constitutionalism circa 2004.” <i>California Law Review</i> 92, no. 4
+				(2004): 959-1010.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Law, Thomas. <span
+				class=GramE>“ Observations</span> on the Intended Canal in Washington City.” In
+				<i>Records of the Columbia Historical Society</i>, vol. 8. Washington: Columbia
+				Historical Society, 1905. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><i>Laws of the
+				Corporation of the City of</i> <i>Washington</i>, vol. 4. Washington, D.C.:
+				Jacob Gideon Jr., 1835. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Lefebvre, Henri. <i>The
+				Production of Space</i>. Translated by Donald Nicholson-Smith. Oxford:
+				Blackwell, 1991.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Maloney, Linda. <i>The
+				Captain from Connecticut: The Life and Naval Times of Isaac Hull</i>. Boston:
+				Northeastern University Press, 1986). </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><i>Population
+				schedules of the fifth census of the United States, 1830, District of Columbia</i>.
+				<span class=markbsprxbj9o>Washington</span>: National Archives and Records
+				Administration, 1969. <span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><i>Population of
+				States and Counties of the United States: 1790 to 1990</i>. Edited by Richard
+				L. <span class=SpellE>Forstall</span>. Washington: Bureau of the Census, 1996. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><span
+				class=SpellE>Pretzler</span>, William <span class=SpellE><span class=GramE>S.“</span>‘The</span>
+				British, Duff Green, the Rats, and the Devil:’ Custom, Capitalism, and Conflict
+				in the Washington Printing Trade, 1834-36.” <i>Labor History</i> 27 (1985-86):
+				5-30.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Prince, Carl E.
+				“The Great ‘Riot Year:’ Jacksonian Democracy and Patterns of Violence in 1834.”
+				<i>Journal of the Early Republic</i> 5, no. 1 (1985): 1-19. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Rockman, Seth. <i>Scraping
+				By: Wage Labor, Slavery, and Survival in Early Baltimore</i>. Baltimore: The
+				Johns Hopkins University Press, 2009.<span style='mso-spacerun:yes'>  </span></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Rothman, Joshua
+				D. <i>Flush Times and Fever Dreams: A Story of Capitalism and Slavery in the
+				Age of Jackson</i>. Athens: The University of Georgia Press, 2012.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Royall, Anne
+				Newport. <i>Sketches of History, Life, and Manners, in the United States <span
+				class=GramE>By</span> a Traveler. </i>New Haven: Anne Newport Royall, 1826. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Scranton, Philip.
+				<i>The Proprietary Capitalism: The Textile Manufacture at Philadelphia</i>,
+				1800-1885. Cambridge: Cambridge University Press, 1983.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Seaton,
+				Josephine. <i>William Winston Seaton of the “National Intelligencer.” A
+				Biographical Sketch. With Passing Notices of his Associates and Friends.</i>
+				Boston: James. R. Osgood and Company, 1871. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Sharp, John G. <i>African
+				Americans in Slavery and Freedom on the Washington Navy Yard, 1799-1865. </i>Concord,
+				CA: Hannah Morgan Press, 2011. </p>
+
+				<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Sharp, John G.
+				“Washington Navy Yard Pay and Muster Roll 1808, 1811, 1819, 1829.” Genealogy
+				Trails History Group. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Sharp, John G.
+				“The Washington Navy Yard Strike and ‘Snow Riot’ of 1835.” <span class=SpellE>USGenWeb</span>
+				Archives. Accessed November 14, 2019. usgwarchives.net.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Shiner, Michael. <i>The
+				Diary of Michael Shiner</i>. Edited by John G. Sharp. Naval History and Heritage Command, 2009. https://www.history.navy.mil/content/history/nhhc/research/library/online-reading-room/title-list-alphabetically/d/diary-of-michael-shiner.html.
+				</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Story, Joseph. <i>Life
+				and Letters of Joseph Story</i>. Edited by William Story. Boston, Charles C.
+				Little and James Brown, 1851. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Tanner, Henry S. City
+				of Washington. Map. Philadelphia: H. S. Tanner, 1836. David Rumsey Map
+				Collection. https://www.davidrumsey.com/luna/servlet/s/39mn62.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Thomas III,
+				William G. “Mob Law.” In <i>Unpublished Manuscript</i>.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoFootnoteText style='margin-left:.5in;text-indent:-.5in'>Thomas
+				III, William G., Kaci Nash, Laura Weakly, Karin Dalziel, and Jessica <span
+				class=SpellE>Dussault</span>.<span class=apple-converted-space>&nbsp;</span></span><em><span
+				>O Say Can You See:
+				Early Washington, D.C., Law &amp; Family</span></em><span>. University of
+				Nebraska-Lincoln. Accessed November 14, 2019. http://earlywashingtondc.org. </span><span
+				style='font-size:12.0pt'><o:p></o:p></span></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Way, Peter. <i>Common
+				<span class=SpellE>Labour</span>: Workers &amp; the Digging of North American
+				Canals 1780 – 1850</i>. Cambridge: Cambridge University Press, 1993. </p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'>Winkle, Kenneth
+				J. <i>Lincoln’s Citadel: The Civil War <span class=GramE>In</span> Washington,</i>
+				<i>DC</i>. New York City: W.W. Norton, 2013.</p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><o:p>&nbsp;</o:p></p>
+
+				<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+				</div>
+
+				<div style='mso-element:footnote-list'><![if !supportFootnotes]><br clear=all>
+
+				<hr align=left size=1 width="33%">
+
+				<![endif]>
+
+				<div style='mso-element:footnote' id=ftn1>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn1' href="#_ftnref1"
+				name="_ftn1" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></a> Michael
+				Shiner, <i>The Diary of Michael Shiner</i> (Naval History and Heritage Command,
+				2009), 64, https://www.history.navy.mil.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn2>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn2' href="#_ftnref2"
+				name="_ftn2" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a> Shiner, <i>The
+				Diary of Michael Shiner</i>, 64. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn3>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn3' href="#_ftnref3"
+				name="_ftn3" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[3]</span></span><![endif]></span></span></a> Shiner, <i>The
+				Diary of Michael Shiner</i>,<i> </i>64. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn4>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn4' href="#_ftnref4"
+				name="_ftn4" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[4]</span></span><![endif]></span></span></a> David
+				Grimsted maintains that no less than 147 riots broke out in 1835 alone. See
+				David Grimsted, <i>American Mobbing, 1828-1861: Toward Civil War</i> (Oxford:
+				Oxford University Press, 1998), 4. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn5>
+
+				<p class=MsoNormal><a style='mso-footnote-id:ftn5' href="#_ftnref5" name="_ftn5"
+				title=""><span class=MsoFootnoteReference><span style='font-size:10.0pt'><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:10.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[5]</span></span><![endif]></span></span></span></a><span
+				> For the misrepresentation of the riot as an act of
+				racial solidarity, as noted by John Sharp, see <span>Phillip S. Foner, <i>History of the Labor Movement in the
+				United States from Colonial Times to the Founding of the American Federation of
+				Labor</i> (New York: International Publishers, 1979). Paul Gilje does not
+				directly reference the Snow <span class=GramE>Riot, but</span> mentions
+				anti-abolition riots turned into “virulent onslaughts against the black
+				community as in New York City in July 1834, in Cincinnati in 1836, in
+				Philadelphia in 1838, and elsewhere”. The Snow Riot is part of that anonymous
+				“elsewhere.” See </span>Paul Gilje, <span class=GramE><i>Rioting</i></span><i>
+				in America</i> (Bloomington: Indiana University Press, 1996), 82. David
+				Grimsted argues that “The South developed its own style of social violence, <span
+				class=SpellE>semisanctioned</span> and rarely opposed, against any questioning
+				of slavery.” See Grimsted, <i>American Mobbing, </i>x<i>.</i></span><i> </i><span
+				><o:p></o:p></span></p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn6>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn6' href="#_ftnref6"
+				name="_ftn6" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[6]</span></span><![endif]></span></span></a>
+				Historians have long argued over the relationship between slavery and
+				capitalism. While an older tradition of scholarship argues that slavery existed
+				in opposition to capitalism, a group of historians have explored the ways in
+				which slavery existed as a facet of American capitalism. See Edward Baptist, <i>The
+				Half Has Never Been Told: Slavery and the Making of American Capitalism</i>
+				(New York City: Basic Books, 2014), Seth Rockman, <i>Scraping By: Wage Labor,
+				Slavery, and Survival in Early Baltimore</i> (Baltimore: The Johns Hopkins
+				University Press, 2009) and Joshua D. Rothman, <i>Flush Times and Fever Dreams:
+				A Story of Capitalism and Slavery in the Age of Jackson</i> (Athens: The
+				University of Georgia Press, 2012).</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn7>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn7' href="#_ftnref7"
+				name="_ftn7" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[7]</span></span><![endif]></span></span></a> <i>Population
+				of States and Counties of the United States: 1790 to 1990</i>, ed. Richard L.
+				Forstall (Washington: Bureau of the Census, 1996), 29. These numbers do not
+				include Georgetown and Alexandria.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn8>
+
+				<p class=MsoNormal><a style='mso-footnote-id:ftn8' href="#_ftnref8" name="_ftn8"
+				title=""><span class=MsoFootnoteReference><span style='font-size:10.0pt'><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:10.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[8]</span></span><![endif]></span></span></span></a><span
+				> See Henri Lefebvre, <i>The Production of Space</i>, trans.
+				Donald Nicholson-Smith (Oxford: Blackwell, 1991).<o:p></o:p></span></p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn9>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn9' href="#_ftnref9"
+				name="_ftn9" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[9]</span></span><![endif]></span></span></a> Adam
+				Costanzo, <i>George Washington’s Washington: Visions for the National Capital
+				in the Early American Republic </i>(Athens: The University of Georgia Press,
+				2018), 151.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn10>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn10' href="#_ftnref10"
+				name="_ftn10" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[10]</span></span><![endif]></span></span></a> Kenneth
+				J. Winkle, <i>Lincoln’s Citadel: The Civil War <span class=GramE>In</span>
+				Washington,</i> <i>DC</i> (New York City: W.W. Norton, 2013), 16-17.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn11>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn11' href="#_ftnref11"
+				name="_ftn11" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[11]</span></span><![endif]></span></span></a>
+				Costanzo, <i>George Washington’s Washington</i>, 160.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn12>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn12' href="#_ftnref12"
+				name="_ftn12" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[12]</span></span><![endif]></span></span></a> Thomas
+				Law, <span class=GramE>“ Observations</span> on the Intended Canal in
+				Washington City,” <i>Records of the Columbia Historical Society</i> (Washington:
+				Columbia Historical Society, 1905), 8:160. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn13>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn13' href="#_ftnref13"
+				name="_ftn13" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[13]</span></span><![endif]></span></span></a> Law,
+				“Observations,” 162-163. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn14>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn14' href="#_ftnref14"
+				name="_ftn14" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[14]</span></span><![endif]></span></span></a> <i>Laws
+				of the Corporation of the City of</i> <i>Washington</i> (Washington, D.C.:
+				Jacob Gideon Jr., 1835), 4: 293.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn15>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn15' href="#_ftnref15"
+				name="_ftn15" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[15]</span></span><![endif]></span></span></a>
+				Cornelius W. Heine, “The Washington City Canal,” <i>Records of the Columbia
+				Historical Society, Washington, D.C.</i> 42 (1953, 1956): 15. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn16>
+
+				<p class=MsoNormal><a style='mso-footnote-id:ftn16' href="#_ftnref16"
+				name="_ftn16" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[16]</span></span><![endif]></span></span></a> <span
+				>Data from Jonathon Elliot, <i>Historical Sketches of
+				the Ten Miles Square Forming the District of Columbia: With a Picture of
+				Washington</i>, <i>Describing Objects of General Interest or Curiosity at the Metropolis
+				of the Union</i>. (Washington: J. Elliot, Jr, 1830), 198 and Data from <i>Population
+				schedules of the fifth census of the United States, 1830, District of Columbia</i>
+				(<span class=markbsprxbj9o>Washington</span>: National Archives and Records
+				Administration, 1969). <o:p></o:p></span></p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn17>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn17' href="#_ftnref17"
+				name="_ftn17" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[17]</span></span><![endif]></span></span></a> William
+				Green, <i>A Full Directory, for Washington City, Georgetown, and Alexandria</i>
+				(Washington: E.A. Cohen and Company, 1834). </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn18>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn18' href="#_ftnref18"
+				name="_ftn18" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[18]</span></span><![endif]></span></span></a> John G.
+				M. Sharp, “The Washington Navy Yard Strike and ‘Snow Riot’ of 1835,” at <span
+				class=SpellE>USGenWeb</span> Archives, Accessed November 14, 2019,
+				usgwarchives.net. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn19>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn19' href="#_ftnref19"
+				name="_ftn19" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[19]</span></span><![endif]></span></span></a> Anne
+				Newport Royall, <i>Sketches of History, Life, and Manners, in the United States
+				<span class=GramE>By</span> a Traveler </i>(New Haven: Anne Newport Royall,
+				1826), 140.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn20>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn20' href="#_ftnref20"
+				name="_ftn20" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[20]</span></span><![endif]></span></span></a> Royall,
+				<i>Sketches</i>, 140.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn21>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn21' href="#_ftnref21"
+				name="_ftn21" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[21]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>, 52.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn22>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn22' href="#_ftnref22"
+				name="_ftn22" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[22]</span></span><![endif]></span></span></a> Sharp,
+				“The Washington Navy Yard Strike and ‘Snow Riot’ of 1835.”</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn23>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn23' href="#_ftnref23"
+				name="_ftn23" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[23]</span></span><![endif]></span></span></a> Sharp,
+				“The Washington Navy Yard Strike and ‘Snow Riot’ of 1835.”</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn24>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn24' href="#_ftnref24"
+				name="_ftn24" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[24]</span></span><![endif]></span></span></a> Isaac
+				Hull to John Rogers, Apr. 5, 1831, as quoted by Linda Maloney, <i>The Captain
+				from Connecticut: The Life and Naval Times of Isaac Hull</i> (Boston:
+				Northeastern University Press, 1986), 422.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn25>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn25' href="#_ftnref25"
+				name="_ftn25" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[25]</span></span><![endif]></span></span></a> Sharp,
+				“The Washington Navy Yard Strike and ‘Snow Riot’ of 1835.”</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn26>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn26' href="#_ftnref26"
+				name="_ftn26" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[26]</span></span><![endif]></span></span></a>
+				“General Orders for the Regulation of the Navy Yard Washington, DC,” <i>Naval
+				History and Heritage Command</i>, 2014, https://www.history.navy.mil.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn27>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn27' href="#_ftnref27"
+				name="_ftn27" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[27]</span></span><![endif]></span></span></a> John G.
+				Sharp, <i>African Americans in Slavery and Freedom on the Washington Navy Yard,
+				1799-1865 </i>(Concord, CA: Hannah Morgan Press, 2011), 92.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn28>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn28' href="#_ftnref28"
+				name="_ftn28" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[28]</span></span><![endif]></span></span></a> Sharp, <i>African
+				Americans in Slavery and Freedom on the Washington Navy Yard</i>, 92.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn29>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn29' href="#_ftnref29"
+				name="_ftn29" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[29]</span></span><![endif]></span></span></a>
+				Circular, Board of Naval Commissioners, Mar. 17, 1817 as quoted by Sharp, <i>African
+				Americans in Slavery and Freedom on the Washington Navy Yard</i>, 32.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn30>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn30' href="#_ftnref30"
+				name="_ftn30" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[30]</span></span><![endif]></span></span></a> Isaac
+				Hull to the Board of Naval Commissioners, Apr. 8, 1830 as quoted by Sharp,<i> African
+				Americans in Slavery and Freedom on the Washington Navy Yard</i>, 91.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn31>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn31' href="#_ftnref31"
+				name="_ftn31" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[31]</span></span><![endif]></span></span></a> Thomas,
+				“Mob Law,” 7. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn32>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn32' href="#_ftnref32"
+				name="_ftn32" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[32]</span></span><![endif]></span></span></a> Thomas,
+				“Mob Law,” 12.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn33>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn33' href="#_ftnref33"
+				name="_ftn33" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[33]</span></span><![endif]></span></span></a> Thomas,
+				“Mob Law,” 17-18.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn34>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn34' href="#_ftnref34"
+				name="_ftn34" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[34]</span></span><![endif]></span></span></a> Thomas,
+				“Mob Law,” 13 and Shiner, <i>The Diary of Michael Shiner</i>, 53-54.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn35>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn35' href="#_ftnref35"
+				name="_ftn35" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[35]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>, 54.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn36>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn36' href="#_ftnref36"
+				name="_ftn36" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[36]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>, 54 and Isaac Hull, “A List of Colored men
+				free &amp; Slaves now <span class=SpellE>Employ’d</span> in the Blacksmiths
+				&amp; Engine department &amp; in Ordinary at the Navy Yard Washington,” April
+				8, 1830. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn37>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn37' href="#_ftnref37"
+				name="_ftn37" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[37]</span></span><![endif]></span></span></a>
+				Rockman, <i>Scaping By</i>, 8.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn38>
+
+				<p class=MsoNormal><a style='mso-footnote-id:ftn38' href="#_ftnref38"
+				name="_ftn38" title=""><span class=MsoFootnoteReference><span style='font-size:
+				10.0pt'><span style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:10.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[38]</span></span><![endif]></span></span></span></a><span
+				> <span>Thomas
+				Johnson, David Stuart, and Daniel Carroll to Thomas Jefferson,<i> </i>Jan. 5,
+				1793. For more, see </span>Sharp, “The Washington Navy Yard Strike and ‘Snow
+				Riot’ of 1835.”<o:p></o:p></span></p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn39>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn39' href="#_ftnref39"
+				name="_ftn39" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[39]</span></span><![endif]></span></span></a>
+				Maloney, <i>The Captain from Connecticut</i>, 421.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn40>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn40' href="#_ftnref40"
+				name="_ftn40" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[40]</span></span><![endif]></span></span></a> Royall,
+				<i>Sketches</i>, 140. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn41>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn41' href="#_ftnref41"
+				name="_ftn41" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[41]</span></span><![endif]></span></span></a>
+				Maloney, <i>The Captain from Connecticut</i>, 421.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn42>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn42' href="#_ftnref42"
+				name="_ftn42" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[42]</span></span><![endif]></span></span></a>
+				Rockman, <i>Scraping By</i>, 56.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn43>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn43' href="#_ftnref43"
+				name="_ftn43" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[43]</span></span><![endif]></span></span></a> “On the
+				City Slave Tax,” <i>Daily</i> <i>National Intelligencer</i> (Washington,
+				District of Columbia) Mar. 26, 1816.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn44>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn44' href="#_ftnref44"
+				name="_ftn44" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[44]</span></span><![endif]></span></span></a> Nancy
+				Isenberg, <i>White Trash: The 400-Year Untold Story of Class in America</i>
+				(New York City: Penguin Books, 2016), 135.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn45>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn45' href="#_ftnref45"
+				name="_ftn45" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[45]</span></span><![endif]></span></span></a> “Prize
+				Essay,” <i>Lynchburg Virginian</i> (Lynchburg, Virginia), Jul. 4, 1833. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn46>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn46' href="#_ftnref46"
+				name="_ftn46" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[46]</span></span><![endif]></span></span></a> Royall,
+				<i>Sketches</i>, 141. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn47>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn47' href="#_ftnref47"
+				name="_ftn47" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[47]</span></span><![endif]></span></span></a> Thomas,
+				“Mob Law,” 13.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn48>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn48' href="#_ftnref48"
+				name="_ftn48" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[48]</span></span><![endif]></span></span></a> Shiner
+				notes having a warm relationship with at least one white worker, ship carpenter
+				Jesse Morison, in 1828.<span style='mso-spacerun:yes'>  </span>Shiner, <i>The
+				Diary of Michael Shiner</i>, 34. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn49>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn49' href="#_ftnref49"
+				name="_ftn49" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[49]</span></span><![endif]></span></span></a>
+				“Memorial of the Inhabitants of the District of Columbia, praying for the
+				Gradual Abolition of Slavery in the District of Columbia<span class=GramE>,”<span
+				style='mso-spacerun:yes'>  </span><i>The</i></span><i> National Era</i>
+				(Washington, District of Columbia) Mar. 29, 1849. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn50>
+
+				<p class=MsoNormal><a style='mso-footnote-id:ftn50' href="#_ftnref50"
+				name="_ftn50" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[50]</span></span><![endif]></span></span></a> <span
+				>WNY Blacksmiths Petition
+				to Hamilton, <span class=GramE>Oct.,</span> 1812, as quoted in Sharp,</span><i><span
+				> African Americans in Slavery and Freedom on the
+				Washington Navy Yard</span></i><span>, 30-31.<o:p></o:p></span></p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn51>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn51' href="#_ftnref51"
+				name="_ftn51" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[51]</span></span><![endif]></span></span></a> Gilje, <i>Rioting
+				in America</i>, 89.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn52>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn52' href="#_ftnref52"
+				name="_ftn52" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[52]</span></span><![endif]></span></span></a> Gilje, <i>Rioting
+				in America</i>, 90.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn53>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn53' href="#_ftnref53"
+				name="_ftn53" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[53]</span></span><![endif]></span></span></a> Gilje, <i>Rioting
+				in America</i>, 90.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn54>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn54' href="#_ftnref54"
+				name="_ftn54" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[54]</span></span><![endif]></span></span></a> Carl E.
+				Prince, “The Great ‘Riot Year:’ Jacksonian Democracy and Patterns of Violence
+				in 1834,” <i>Journal of the Early Republic</i> 5, no. 1 (1985): 8.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn55>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn55' href="#_ftnref55"
+				name="_ftn55" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[55]</span></span><![endif]></span></span></a> <span
+				class=SpellE>Grimsted</span>, <i>American Mobbing</i>, 4. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn56>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn56' href="#_ftnref56"
+				name="_ftn56" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[56]</span></span><![endif]></span></span></a> “Riots
+				on the Line of the Canal” <i>Daily National Intelligencer</i> (Washington,
+				District of Columbia), Jan. 29, 1834 and Peter Way, <i>Common <span
+				class=SpellE>Labour</span>: Workers &amp; the Digging of North American Canals
+				1780 - 1850</i> (Cambridge: Cambridge University Press, 1993), 201.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn57>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn57' href="#_ftnref57"
+				name="_ftn57" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[57]</span></span><![endif]></span></span></a> Prince,
+				“The Great ‘Riot Year,’” 16. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn58>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn58' href="#_ftnref58"
+				name="_ftn58" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[58]</span></span><![endif]></span></span></a>
+				“Prince, “The Great ‘Riot Year,’” 19, and<span style='mso-spacerun:yes'> 
+				</span>William G. Thomas III, “Mob Law,” <i>Unpublished Manuscript</i>, 2 and
+				“The Washington Mirror of Saturday gives the following particulars of the riot
+				which took place last Friday on the Baltimore and Washington Rail Road,” <i>The
+				Daily Atlas</i> (Boston, Massachusetts), Mar. 13, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn59>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn59' href="#_ftnref59"
+				name="_ftn59" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[59]</span></span><![endif]></span></span></a> William
+				S. <span class=SpellE>Pretzler</span>, “‘The British, Duff Green, the Rats, and
+				the Devil:’ Custom, Capitalism, and Conflict in the Washington Printing Trade,
+				1834-36,” <i>Labor History</i> 27 (Winter 1985-86): 19.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn60>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn60' href="#_ftnref60"
+				name="_ftn60" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[60]</span></span><![endif]></span></span></a> Sharp,
+				“The Washington Navy Yard Strike and ‘Snow Riot’ of 1835.” </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn61>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn61' href="#_ftnref61"
+				name="_ftn61" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[61]</span></span><![endif]></span></span></a> David
+				Walker Howe, <i>What Hath God Wrought: The Transforming of America, 1815-1848</i>
+				(Oxford: Oxford University Press, 2007), 549 and Sharp, “The Washington Navy
+				Yard Strike and ‘Snow Riot’ of 1835.”</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn62>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn62' href="#_ftnref62"
+				name="_ftn62" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[62]</span></span><![endif]></span></span></a> Howe, <i>What
+				Hath God Wrought</i>, 548. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn63>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn63' href="#_ftnref63"
+				name="_ftn63" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[63]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>, 59<i> </i>and Sharp, “The Washington Navy
+				Yard Strike and ‘Snow Riot’ of 1835.”</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn64>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn64' href="#_ftnref64"
+				name="_ftn64" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[64]</span></span><![endif]></span></span></a>
+				“General Orders.”</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn65>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn65' href="#_ftnref65"
+				name="_ftn65" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[65]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>, 59-60.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn66>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn66' href="#_ftnref66"
+				name="_ftn66" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[66]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>,<i> </i>60.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn67>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn67' href="#_ftnref67"
+				name="_ftn67" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[67]</span></span><![endif]></span></span></a>
+				Maloney, <i>The Captain from Connecticut</i>, 437.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn68>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn68' href="#_ftnref68"
+				name="_ftn68" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[68]</span></span><![endif]></span></span></a>
+				Maloney, <i>The Captain from Connecticut</i>, 438.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn69>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn69' href="#_ftnref69"
+				name="_ftn69" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[69]</span></span><![endif]></span></span></a>
+				Maloney, <i>The Captain from Connecticut</i>, 439.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn70>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn70' href="#_ftnref70"
+				name="_ftn70" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[70]</span></span><![endif]></span></span></a>
+				Maloney, <i>The Captain from Connecticut</i>, 439.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn71>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn71' href="#_ftnref71"
+				name="_ftn71" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[71]</span></span><![endif]></span></span></a> Gilje, <i>Rioting
+				in America</i>, 31.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn72>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn72' href="#_ftnref72"
+				name="_ftn72" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[72]</span></span><![endif]></span></span></a> “The
+				Negroes at the North” <i>United States’ Telegraph</i> (Washington, District of
+				Columbia), Aug. 29, 1835.<span style='mso-spacerun:yes'>  </span></p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn73>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn73' href="#_ftnref73"
+				name="_ftn73" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[73]</span></span><![endif]></span></span></a> William
+				Ellis and John Cassidy to Isaac Hull, Aug. 12, 1835, as quoted in Maloney, <i>The
+				Captain from Connecticut</i>, 439.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn74>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn74' href="#_ftnref74"
+				name="_ftn74" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[74]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>,<i> </i>60.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn75>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn75' href="#_ftnref75"
+				name="_ftn75" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[75]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>,<i> </i>60.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn76>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn76' href="#_ftnref76"
+				name="_ftn76" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[76]</span></span><![endif]></span></span></a>
+				Josephine Seaton, <i>William Winston Seaton of the “National Intelligencer:” A
+				Biographical Sketch</i> (Boston: James R. Osgood and Company, 1871), 218.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn77>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn77' href="#_ftnref77"
+				name="_ftn77" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[77]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>,<i> </i>60.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn78>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn78' href="#_ftnref78"
+				name="_ftn78" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[78]</span></span><![endif]></span></span></a> “It is
+				with Extreme Regret,” <i>The Globe</i> (Washington, District of Columbia) Aug.
+				14, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn79>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn79' href="#_ftnref79"
+				name="_ftn79" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[79]</span></span><![endif]></span></span></a> “It is
+				with Extreme Regret,” Aug. 14, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn80>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn80' href="#_ftnref80"
+				name="_ftn80" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[80]</span></span><![endif]></span></span></a> “It is
+				with Extreme Regret,” Aug. 14, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn81>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn81' href="#_ftnref81"
+				name="_ftn81" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[81]</span></span><![endif]></span></span></a> “It is
+				with Extreme Regret,” Aug. 14, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn82>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn82' href="#_ftnref82"
+				name="_ftn82" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[82]</span></span><![endif]></span></span></a> “It is
+				with Extreme Regret,” Aug. 14, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn83>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn83' href="#_ftnref83"
+				name="_ftn83" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[83]</span></span><![endif]></span></span></a> William
+				Bradley, “Our City Yesterday was in a State of Great Excitement,” <i>United
+				States’ Telegraph</i> (Washington, District of Columbia) Aug. 13, 1835 and “The
+				State of the City,” <i>Daily National Intelligencer </i>(Washington, District
+				of Columbia) Aug. 14, 1835. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn84>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn84' href="#_ftnref84"
+				name="_ftn84" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[84]</span></span><![endif]></span></span></a> Willard
+				B. Gatewood Jr., “John Francis Cook, Antebellum Black Presbyterian,” <i>American
+				Presbyterians</i> 67, no. 3 (1989): 222. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn85>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn85' href="#_ftnref85"
+				name="_ftn85" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[85]</span></span><![endif]></span></span></a> “It is
+				with Extreme Regret,” Aug. 14, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn86>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn86' href="#_ftnref86"
+				name="_ftn86" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[86]</span></span><![endif]></span></span></a>
+				Maloney, <i>The Captain from Connecticut</i>, 439.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn87>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn87' href="#_ftnref87"
+				name="_ftn87" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[87]</span></span><![endif]></span></span></a> “The
+				State of the City,” Aug. 14, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn88>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn88' href="#_ftnref88"
+				name="_ftn88" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[88]</span></span><![endif]></span></span></a> George
+				Lyndall, John A. Miskell and Samuel S. Briggs, “To the Public,” <i>Daily
+				National Intelligencer</i> (Washington, District of Columbia), Aug. 14, 1835.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn89>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn89' href="#_ftnref89"
+				name="_ftn89" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[89]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>,<i> </i>63.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn90>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn90' href="#_ftnref90"
+				name="_ftn90" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[90]</span></span><![endif]></span></span></a> Sharp,
+				“The Washington Navy Yard Strike and ‘Snow Riot’ of 1835.”</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn91>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn91' href="#_ftnref91"
+				name="_ftn91" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[91]</span></span><![endif]></span></span></a> Shiner,
+				<i>The Diary of Michael Shiner</i>, 65.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn92>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn92' href="#_ftnref92"
+				name="_ftn92" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[92]</span></span><![endif]></span></span></a>
+				“Amongst the evils which the late riots in Baltimore have inflicted on that
+				city,” <i>Daily National Intelligencer</i> (Washington, District of Columbia)
+				Aug. 13, 1835. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn93>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn93' href="#_ftnref93"
+				name="_ftn93" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[93]</span></span><![endif]></span></span></a> “The
+				National Intelligencer is very much mistaken,” <i>United States’ Telegraph</i>
+				(Washington, District of Columbia) Aug. 14, 1835. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn94>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn94' href="#_ftnref94"
+				name="_ftn94" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[94]</span></span><![endif]></span></span></a> “But
+				little has occurred,” <i>Daily National Intelligencer</i> (Washington, District
+				of Columbia) Aug. 15, 1835. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn95>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn95' href="#_ftnref95"
+				name="_ftn95" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[95]</span></span><![endif]></span></span></a> “We
+				hope,” <i>United States’ Telegraph</i> (Washington, District of Columbia) Aug.
+				14, 1835. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn96>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn96' href="#_ftnref96"
+				name="_ftn96" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[96]</span></span><![endif]></span></span></a> Seaton,
+				<i>William Winston Seaton of the “National Intelligencer,” </i>219.</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn97>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn97' href="#_ftnref97"
+				name="_ftn97" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[97]</span></span><![endif]></span></span></a> See,
+				for example, Grimsted, <i>American Mobbing</i>, in which the Snow Riot is
+				listed as an anti-abolitionist riot. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn98>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn98' href="#_ftnref98"
+				name="_ftn98" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[98]</span></span><![endif]></span></span></a> Beverly
+				Snow, “To the editors,” <i>Daily National Intelligencer</i> (Washington,
+				District of Columbia) Aug. 27, 1835. </p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn99>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn99' href="#_ftnref99"
+				name="_ftn99" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+				footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+				style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+				"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+				mso-bidi-language:AR-SA'>[99]</span></span><![endif]></span></span></a> “A
+				Scene at Washington,” <i>New-York Spectator</i> (New York, New York) Aug. 22, 1836.
+				</p>
+
+				</div>
+
+				<div style='mso-element:footnote' id=ftn100>
+
+				<p class=MsoFootnoteText><a style='mso-footnote-id:ftn100' href="#_ftnref100"
+				name="_ftn100" title=""><span class=MsoFootnoteReference><span
+				style='mso-special-character:footnote'><![if !supportFootnotes]><span
+				class=MsoFootnoteReference><span style='font-size:10.0pt;font-family:"Times New Roman",serif;
+				mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+				EN-US;mso-bidi-language:AR-SA'>[100]</span></span><![endif]></span></span></a>
+				Snow, “To the editors,” Aug. 27, 1835.</p>
+
+				</div>
+
+				</div>
+
+<image src="../images/nebmap3.png" class = mid></div>
+			</body>
