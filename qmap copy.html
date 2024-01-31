@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>
+			Riot Acts: Queryable Map
+		</title>
+		<!-- Leaflet -->
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css"/>
+		<link rel ="stylesheet" href="lib/leaflet/nouislider.css"/>
+		<link rel ="stylesheet" href="lib/leaflet/MarkerCluster.css"/>
+		<link rel ="stylesheet" href="lib/leaflet/MarkerCluster.Default.css"/>
+		<script src="lib/leaflet/leaflet.js" ></script>
+		<script src="lib/leaflet/leaflet.markercluster.js" ></script>
+		<script src="data/borders.json"></script>
+		<script src="data/Labor.json"></script>
+		<script src="data/Firefighter.json"></script>
+		<script src="data/Law.json"></script>
+		<script src="data/Political.json"></script>
+		<script src="data/Racial.json"></script>
+		<script src="data/Religious.json"></script>
+		<script src="data/Slavery.json"></script>
+		<script src="data/Tax.json"></script>
+		<script src="data/Vigilante.json"></script>
+		<script src="data/Ethnic.json"></script>
+		<script src="data/Land.json"></script>
+		<script src="data/Acts.json"></script>
+		<script src="lib/leaflet/nouislider.js" ></script>
+		<style type="text/css">
+			#map {height : 600px; background-color: #b9bab9; margin: 20px; border : 2px solid #d3d3d3; border-radius: 10px;}
+
+			.legend {
+					padding: 6px 8px;
+					background-color: rgba(255,255,255,0.8);
+					box-shadow: 0 0 15px rgba(0,0,0,0.2);
+					border-radius: 5px;
+
+				}
+				.legend i {
+					width: 27px;
+					height: 27px;
+					float: left;
+					margin-right: 16px;
+					opacity: 0.7;
+				}
+				div.legend.leaflet-control br {
+					clear: both;
+				}
+
+
+
+				.center {
+					display: block;
+					margin-top: 40px;
+					margin-bottom: 40px;
+					margin-left: auto;
+					margin-right: auto;
+					width: 35%;
+					}
+
+				.textright {
+					float: right;
+					width: 300px;
+					opacity: 65%;
+					}
+
+				.mid {
+					display: block;
+					margin: 0;
+					width: 100%;
+					opacity: 85%;
+					}
+
+					.mid2 {
+						display: block;
+						margin-left: 0;
+						margin-right: 0;
+						width: 100%;
+						opacity: 55%;
+						}
+
+			.end {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 35%;
+					}
+
+					h1 {
+								font-family: Georgia;
+						    color: #8b0000;
+								margin: 20px;
+								font-size:40px;
+								font-weight: normal;
+						  }
+
+					h2 {
+								font-family: Verdana;
+						    color: #8b0000;
+								margin: 20px;
+								font-size: 30px;
+								font-weight: normal;
+								  }
+
+					p {
+						font-family: Verdana;
+						color: #2b2b2b;
+						margin: 20px;
+						font-size: 18px;
+					}
+
+			.topnav {
+				background-color: #f2f2f2;
+				overflow: hidden;
+				border-radius: 0px;
+				margin-bottom: 15px;
+				text-align: center;
+				justify-content: center;
+			}
+
+			.leftnav a {
+				color: #bfbdbd;
+				text-align: center;
+				display: inline-block;
+				justify-content: center;
+				padding: 15px 25px;
+				margin: 0;
+				text-decoration: none;
+				font-size: 18px;
+				font-family: Verdana;
+			}
+
+			.leftnav a:hover {
+				color: #E2E2E2;
+			}
+
+			.active {
+				color: #8b0000;
+
+			}
+
+
+			.brightad {
+				display: inline-block;
+				margin-top: 10px;
+				margin-right: 0px;
+				width: 30%;
+				padding-left: 3.33%;
+			}
+
+				body,html {
+					margin:0;
+					padding:0;
+				}
+				body{
+								background-color:white;
+						}
+
+		</style>
+	</head>
+	<body style="background-color: #f2f2f2;">
+		<div id="wrapper">
+			<a href="index.html">
+	    <image src="images/musketacts.png" class = center></div>​​​​​​​​​​
+			</a>
+			<nav class = "topnav"/>
+				<div class="leftnav">
+					<a href="index.html">Home</a>
+					<a href="tmap.html">Time Map</a>
+					<a class = "active" href="qmap.html">Queryable Map</a>
+					<a href="Source/source.html">Network Analysis</a>
+					<a href="aigen.html">aiRiot</a>
+					<a href="pe/pe.html">People and Events</a>
+					<a href="stories/stories.html">Stories</a>
+					<a href="about/about.html">About</a>
+				</div>
+			</nav>
+
+				<image src="images/paper.png" class = mid2></div>
+
+		<h1>Queryable Map</h1>
+		<p>
+			This map displays all 2,200 instances of extralegal activity stored in the <i>Riot Acts</i> database.
+			These actions were not disjointed, but instead often shared certain themes or responded to the pressing issues of a given time and place.
+			This map tracks some of the most common patterns in American extralegal violence between 1783 and 1865. Click on the icon in
+				top right of the map to filter the map based on the "type" of violence.
+				<br>
+				<br>
+				Please note that many of the incidents listed here contain disturbing or offensive language and descriptions. While troubling, these words and actions provide the context necessary to understand both particular incidents and larger trends. Click the icon in the top right of the map to toggle a filter. Select an event in order to read more about a particular incident. To adjust the zoom level, either scroll or use the buttons located in the top left of the map screen. To move the map, simply click and drag.
+				<br>
+			</p>
+
+		</p>
+		<div id="map"></div>
+		<div style="margin-right: auto; margin-left: auto; width: 90%; margin-bottom: 10px; text-align: center;">
+		</div>
+
+		<script>
+
+		var base = {
+		  'Empty': L.tileLayer(''),
+		  'OpenStreetMap': L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			'attribution': 'Map data &copy; OpenStreetMap contributors'
+		  })
+		};
+
+		var map = L.map('map', {
+		  'center': [0, 0],
+		  'zoom': 0,
+			'minZoom': 4,
+			'maxZoom': 8,
+		  'layers': [
+			base.Empty
+		  ]
+
+		});
+
+		var mytile =L.tileLayer('usatile/{z}/{x}/{y}.png', {
+			tms: false,
+			attribution: 'Generated by QTiles'
+		}).addTo(map);
+
+		function bordersStyle(feature) {
+
+				return {
+					fillColor: '#bfbdbd',
+					weight: 2,
+					opacity: 1,
+					color: 'black',
+					dashArray : 1,
+					fillOpacity : 0
+
+				};
+			}
+
+		function bordersPop(feature, layer) {
+				var popupContent = 'Name:' + String(feature.properties['NAME']);
+				layer.bindPopup(popupContent);
+			}
+
+
+
+
+		function ActsPop(feature, layer) {
+				var popupContent = 'Year: ' + String(feature.properties['year']) + '<br>State: ' + String(feature.properties['State'])+ '<br>Place: ' + String(feature.properties['Sublocation'])+ '<br>Description: ' + String(feature.properties['Description'])
+				+ '<br>Source: ' + String(feature.properties['Source']);
+				layer.bindPopup(popupContent);
+			}
+		function ActsStyle(feature, latlng) {
+
+				return L.circleMarker(latlng, {
+					radius: 6.0,
+					fillColor: '#40FF00',
+					color: 'white',
+					weight: 2,
+					opacity: 1.0,
+					fillOpacity: 1
+				})
+			}
+
+
+		var points = L.geoJson(Acts,{
+			onEachFeature: ActsPop
+		});
+
+		var Ethnicpoints = L.geoJson(Ethnic,{
+			onEachFeature: ActsPop
+		});
+
+		var Laborpoints = L.geoJson(Labor,{
+			onEachFeature: ActsPop
+		});
+
+		var Lawpoints = L.geoJson(Law,{
+			onEachFeature: ActsPop
+		});
+
+		var Vigilantepoints = L.geoJson(Vigilante,{
+			onEachFeature: ActsPop
+		});
+
+		var Racialpoints = L.geoJson(Racial,{
+			onEachFeature: ActsPop
+		});
+
+		var Slaverypoints = L.geoJson(Slavery,{
+			onEachFeature: ActsPop
+		});
+
+		var Firefighterpoints = L.geoJson(Firefighter,{
+			onEachFeature: ActsPop
+		});
+
+		var Landpoints = L.geoJson(Land,{
+			onEachFeature: ActsPop
+		});
+
+		var Politicalpoints = L.geoJson(Political,{
+			onEachFeature: ActsPop
+		});
+
+		var Religiouspoints = L.geoJson(Religious,{
+			onEachFeature: ActsPop
+		});
+
+		var Taxpoints = L.geoJson(Tax,{
+			onEachFeature: ActsPop
+		});
+
+
+		var clusterSettings = {
+			  maxClusterRadius: 20,
+			  singleMarkerMode: true,
+			  spiderLegPolylineOptions: {
+				color: '#FFF',
+				weight: 3,
+				opacity: 1,
+			  },
+
+			};
+
+		var markers = L.markerClusterGroup(clusterSettings);
+		markers.addLayer(points);
+		markers.addTo(map);
+
+		var Ethnicmarkers = L.markerClusterGroup(clusterSettings);
+		Ethnicmarkers.addLayer(Ethnicpoints);
+
+		var Labormarkers = L.markerClusterGroup(clusterSettings);
+		Labormarkers.addLayer(Laborpoints);
+
+		var Lawmarkers = L.markerClusterGroup(clusterSettings);
+		Lawmarkers.addLayer(Lawpoints);
+
+		var Vigilantemarkers = L.markerClusterGroup(clusterSettings);
+		Vigilantemarkers.addLayer(Vigilantepoints);
+
+		var Racialmarkers = L.markerClusterGroup(clusterSettings);
+		Racialmarkers.addLayer(Racialpoints);
+
+		var Slaverymarkers = L.markerClusterGroup(clusterSettings);
+		Slaverymarkers.addLayer(Slaverypoints);
+
+		var Firefightermarkers = L.markerClusterGroup(clusterSettings);
+		Firefightermarkers.addLayer(Firefighterpoints);
+
+		var Landmarkers = L.markerClusterGroup(clusterSettings);
+		Landmarkers.addLayer(Landpoints);
+
+		var Politicalmarkers = L.markerClusterGroup(clusterSettings);
+		Politicalmarkers.addLayer(Politicalpoints);
+
+		var Religiousmarkers = L.markerClusterGroup(clusterSettings);
+		Religiousmarkers.addLayer(Religiouspoints);
+
+		var Taxmarkers = L.markerClusterGroup(clusterSettings);
+		Taxmarkers.addLayer(Taxpoints);
+
+		bordersLayer =  L.geoJson(borders,{
+					style : bordersStyle,
+					onEachFeature: bordersPop,
+					filter:
+						function(feature, layer) {
+							 return (feature.properties.End >= 1865) && (feature.properties.Start <= 1865);
+						},
+				})
+
+
+				bordersLayer.addTo(map)
+				map.fitBounds(bordersLayer.getBounds());
+
+		var overlayMaps = {
+			'All' : markers,
+			'Ethnic/National' : Ethnicmarkers,
+			'Labor' : Labormarkers,
+			'Law' : Lawmarkers,
+			'Vigilante' : Vigilantemarkers,
+			'Racial' : Racialmarkers,
+			'Slavery' : Slaverymarkers,
+			'Firefighter' : Firefightermarkers,
+			'Land' : Landmarkers,
+			'Political' : Politicalmarkers,
+			'Religious' : Religiousmarkers,
+			'Tax' : Taxmarkers,
+
+		}
+		L.control.layers(overlayMaps).addTo(map);
+			//Patrick Hoehne
+		</script>
+		<h2>Data and Sources</h2>
+
+
+		<p>This map currently consists of over 2,200 instances of extralegal action. The dataset seen here initially emerged from the notecards of
+		the historian Paul Gilje, compiled by Peter Turchin and made available by Ohio State University's Criminal Justice Research Center.
+		Original archival research and datasets from several additional books provided several hundred more incidents to the dataset.
+		Michael Pfeifer's <i>The Roots of Rough Justice</i> and William D. Carrigan and Clive Webb's <i>Forgotten Dead</i> were especially important, both
+		in shaping the analytical approach and providing important data.
+		For a more detailed description of the data, works, and research behind this project, please see the About section. </p>
+
+		<h2>Creating the Map</h2>
+		<p>Along with research and compilation, <i>Riot Acts</i> does the work of providing every entry in the database with geographic coordinates. Every entry also receives tags denoting the "type" of violence, the attributes of both the sources and targets of the action,
+			and a tag describing the type of action taken.
+			<i>Riot Acts</i> also records the names of the sources and targets of the action, if known, as well as the number killed or wounded.
+			The Newberry Library's <a href="https://publications.newberry.org/ahcbp/pages/United_States.html">Atlas of Historical County Boundaries</a> provides the shapefiles for the changing state borders. The 3D basemap was produced by Patrick Hoehne.
+		</p>
+		<h2>Interpreting the Data</h2>
+
+		<image src="images/clubdunk2.png" class = textright>
+
+		<p>All history requires a great deal of interpretation, and the entries in this database are no different. Most entries, for example, involve Americans, but the descriptions of the event often only
+		mention this reality when Americans are contrasted with non-Americans. This issue because even more complex with issues of race, religion, and identity. While this presents some potential issues, these descriptions also provide a unique opportunity.
+		In seeing how issues of race, ethnicity, religion, and class are either presented or omitted, this project gives new insight into the formation and contest of identity throughout American history. The "type" of extralegal activity is assigned based on the issues and persons implicated in the action.
+		Again, this leads to potential complications. An act of extralegal violence tagged "racial," for example, might only involve white people. However, if those white people were engaging violently over the issue of slavery, and by extension white supremacy, the issue of race is bound up in the action and cannot be ignored.
+		Similar complexities emerge around the topic of religion. A violent incident between Anglo-American Protestants and Irish Roman Catholics might not include any clerics, but bigotry and hatred connected to real or perceived religious affiliation is important to consider. Therefore, such an event would be tagged "religious,"
+		even if religion is never explicitly mentioned. In the same spirit, "vigilante" action refers broadly to any form of violence in which participants attempted to take the law into their own hands.
+		<br>
+		<br>
+		It must also be noted that <i>Riot Acts</i>, like much of history, is haunted by gaps and silences. No project can ever hope to present a complete picture of American extralegal violence, and many victims will never be known or remembered.
+		When exploring these visualizations and approaching the data, it is important to remember that history is a human endeavor, and is shaped by biases, agendas, and power. The history presented here is a reflection of the environments in which it was produced,
+		and must be appraised critically. Still, in interrogating the evidence available and questioning the gaps therein, this project hopes to contribute to a fuller understanding of the history of extralegal violence in the United States of America.</p>
+
+		<image src="images/nebmap3.png" class = mid></div>
+</body>
